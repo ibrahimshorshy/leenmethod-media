@@ -109,7 +109,7 @@ body{{font-family:D,sans-serif;color:#fff}}
 #panelglow2{{position:absolute;right:-380px;top:1330px;width:1000px;height:1000px;border-radius:50%;background:radial-gradient(circle,rgba(139,185,66,.14),rgba(139,185,66,0) 65%)}}
 .logochip{{position:absolute;left:56px;top:64px;background:rgba(4,23,48,.74);border-radius:28px;padding:15px 26px;display:flex;border:1.5px solid rgba(255,255,255,.14)}}
 .logochip img{{height:62px;display:block}}
-#bar{{position:absolute;left:0;bottom:0;height:10px;width:0;background:linear-gradient(90deg,#33AFD5,#8BB942)}}
+#bar{{position:absolute;left:0;bottom:0;height:12px;width:0;background:linear-gradient(90deg,#33AFD5,#8BB942)}}
 .sc{{position:absolute;left:64px;right:64px;top:1090px;height:720px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;opacity:0}}
 .kick{{display:inline-block;background:rgba(51,175,213,.14);border:2px solid rgba(51,175,213,.55);color:#8ADBF2;border-radius:99px;padding:6px 30px 10px;font-weight:700;font-size:34px;margin-bottom:34px}}
 .hook{{font-weight:700;font-size:88px;line-height:1.28;color:#fff;text-shadow:0 4px 30px rgba(0,0,0,.35)}}
@@ -117,10 +117,10 @@ body{{font-family:D,sans-serif;color:#fff}}
 .tag{{display:inline-block;background:rgba(51,175,213,.14);border:2px solid rgba(51,175,213,.55);color:#8ADBF2;border-radius:99px;padding:4px 26px 8px;font-weight:700;font-size:32px}}
 .dots i{{display:inline-block;width:16px;height:16px;border-radius:50%;background:rgba(255,255,255,.25);margin:0 6px}}
 .dots i.on{{background:linear-gradient(135deg,#33AFD5,#8BB942);width:44px;border-radius:99px}}
-.src{{font-weight:700;font-size:86px;line-height:1.35;color:#fff;margin-bottom:22px}}
+.src{{font-weight:700;font-size:108px;line-height:1.3;color:#fff;margin-bottom:26px}}
 .w{{display:inline-block;opacity:0}}
-.lat{{font-weight:500;font-size:46px;color:#6FD6F1;margin-bottom:18px;direction:ltr;letter-spacing:.3px}}
-.tr{{font-weight:500;font-size:52px;line-height:1.45;color:#BFE07A}}
+.lat{{font-weight:500;font-size:54px;color:#6FD6F1;margin-bottom:18px;direction:ltr;letter-spacing:.3px}}
+.tr{{font-weight:500;font-size:62px;line-height:1.4;color:#BFE07A}}
 .note{{font-weight:700;font-size:70px;line-height:1.4;background:linear-gradient(90deg,#33AFD5,#8BB942);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}}
 .an,.an2{{opacity:0}}
 #end{{position:absolute;inset:0;opacity:0;background:#041730;overflow:hidden}}
