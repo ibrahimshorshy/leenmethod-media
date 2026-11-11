@@ -175,7 +175,7 @@ const W_={W};
 """
     body = (f'<div id="stage"><img id="photo" src="{G}/{scene}.png"><div id="fade"></div><div id="top"></div><div id="panelglow"></div><div id="panelglow2"></div>'
             f'<div class="logochip"><img src="{B}/logo.png"></div>{hook}{sc}{endhtml}<div id="bar"></div></div>')
-    page_html = f'<!doctype html><html><head><meta charset="utf-8"><style>{css}</style></head><body>{body}<script>{js}</script></body></html>'
+    page_html = f'<!doctype html><html dir="{"ltr" if page == "enku" else "rtl"}"><head><meta charset="utf-8"><style>{css}</style></head><body>{body}<script>{js}</script></body></html>'
     return page_html, D
 
 
