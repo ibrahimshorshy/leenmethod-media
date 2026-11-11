@@ -103,7 +103,7 @@ html,body{{width:{W}px;height:{HH}px;overflow:hidden;background:#041730}}
 body{{font-family:D,sans-serif;color:#fff}}
 #stage{{position:relative;width:{W}px;height:{HH}px;overflow:hidden;background:#041730}}
 #photo{{position:absolute;left:-60px;top:-40px;width:{W+120}px;height:1260px;object-fit:cover;filter:saturate(1.05) contrast(1.03)}}
-#fade{{position:absolute;left:0;top:700px;width:100%;height:560px;background:linear-gradient(180deg,rgba(4,23,48,0),#041730 92%)}}
+#fade{{position:absolute;left:0;top:700px;width:100%;height:660px;background:linear-gradient(180deg,rgba(4,23,48,0),#041730 80%)}}
 #top{{position:absolute;left:0;top:0;width:100%;height:300px;background:linear-gradient(180deg,rgba(4,23,48,.6),rgba(4,23,48,0))}}
 #panelglow{{position:absolute;left:-300px;top:1100px;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(51,175,213,.16),rgba(51,175,213,0) 65%)}}
 #panelglow2{{position:absolute;right:-380px;top:1330px;width:1000px;height:1000px;border-radius:50%;background:radial-gradient(circle,rgba(139,185,66,.14),rgba(139,185,66,0) 65%)}}
