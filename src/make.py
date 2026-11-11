@@ -125,9 +125,9 @@ def post_table(p, w=1080, h=1350):
             st = p.get("cell_styles", [""] * len(r))[j]
             cells += f'<span style="flex:1;text-align:center;{st}">{c}</span>'
         inner += f'<div class="row" style="min-height:{rh}px;padding:6px 34px 10px;border-radius:20px;background:{bg}">{cells}</div>'
-    b += f'<div class="card" style="position:absolute;left:56px;right:56px;top:{top}px;padding:24px 10px">{inner}</div>'
-    if p.get("note"):
-        b += f'<div class="sub" style="position:absolute;right:64px;left:64px;top:{p.get("note_y", 1170)}px;font-size:30px;text-align:center">{p["note"]}</div>'
+    note = f'<div class="sub" style="font-size:30px;text-align:center;padding:0 8px">{p["note"]}</div>' if p.get("note") else ""
+    b += (f'<div style="position:absolute;left:56px;right:56px;top:{top}px;display:flex;flex-direction:column;gap:22px">'
+          f'<div class="card" style="padding:24px 10px">{inner}</div>{note}</div>')
     b += foot(h - 84)
     return page(w, h, b)
 

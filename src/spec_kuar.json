@@ -115,8 +115,9 @@
   "kick": "وانەی ڕۆژانەت",
   "h1": "یەک وانە لە <span class='acc'>7 هەنگاودا</span>",
   "hs": 62,
-  "photo_h": 470,
-  "list_top": 600,
+  "photo_h": 540,
+  "pos": "center 42%",
+  "list_top": 665,
   "numbered": true,
   "fs": 33,
   "gap": 16,
@@ -130,7 +131,7 @@
    "جارێکی تر بیخوێنەرەوە و لە خشتەکەدا نیشانەی بکە"
   ],
   "note": "تەنیا 20–30 خولەک لە ڕۆژێکدا",
-  "note_y": 1170
+  "note_y": 1185
  },
  "P05_gender_mistake": {
   "layout": "table",
