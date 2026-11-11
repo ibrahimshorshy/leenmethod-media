@@ -238,6 +238,7 @@ def ad(p, w=1080, h=1350):
            + (f'<div style="align-self:stretch;display:flex;align-items:center;justify-content:space-between;margin-top:6px">'
               f'<div style="display:flex;align-items:center">{pr}</div>{badge_html}</div>' if (pr or badge_html) else "")
            + (f'<div class="lime" style="font-weight:800;font-size:28px">{p["deadline"]}</div>' if p.get("deadline") else "")
+           + ("" if (pr or badge_html) else f'<div style="margin-top:26px">{cta(p.get("cta_size", 36), p.get("cta"), p.get("phone"), p.get("icon", "phone"))}</div>')
            + '</div>')
     b += col
     if p.get("book"):
@@ -245,7 +246,8 @@ def ad(p, w=1080, h=1350):
         side = "right" if TH.get("lang") == "en" else "left"
         b += f'<img src="{B}/book3d.png" style="position:absolute;{side}:30px;top:{ph - bh + 60}px;height:{bh}px;filter:drop-shadow(0 18px 30px rgba(0,0,0,.35))">'
     cy = h - (440 if vertical else 128)
-    b += f'<div style="position:absolute;right:60px;left:60px;top:{cy}px;display:flex;justify-content:center">{cta(p.get("cta_size", 36), p.get("cta"), p.get("phone"), p.get("icon", "phone"))}</div>'
+    if pr or badge_html:
+        b += f'<div style="position:absolute;right:60px;left:60px;top:{cy}px;display:flex;justify-content:center">{cta(p.get("cta_size", 36), p.get("cta"), p.get("phone"), p.get("icon", "phone"))}</div>'
     if vertical:
         b += foot(h - 300)
     return page(w, h, b)
