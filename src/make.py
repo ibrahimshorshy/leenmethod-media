@@ -213,6 +213,8 @@ def ad(p, w=1080, h=1350):
     b += col
     cy = h - (440 if vertical else 128)
     b += f'<div style="position:absolute;right:60px;left:60px;top:{cy}px;display:flex;justify-content:center">{cta(36)}</div>'
+    if vertical:
+        b += foot(h - 300)
     return page(w, h, b)
 
 

@@ -10,8 +10,8 @@
    "عێراقی",
    "کوردی"
   ],
-  "rh": 78,
-  "card_top": 700,
+  "rh": 70,
+  "card_top": 690,
   "rows": [
    [
     "<span class=\"ar\" style=\"font-size:34px\" dir=\"rtl\">كيف حالك؟</span>",
@@ -45,7 +45,7 @@
    ""
   ],
   "note": "ئەم کتێبە ئەو عەرەبییەت فێر دەکات کە لە واقیعدا دەیبیستیت.",
-  "note_y": 1172
+  "note_y": 1196
  },
  "P02_five_words": {
   "layout": "table",
