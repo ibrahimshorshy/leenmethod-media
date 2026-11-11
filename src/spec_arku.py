@@ -78,7 +78,7 @@ S["KA06_gift_friend"] = dict(layout="ad", sizes=SZ, scene="ka06_gift", kick="ه�
 S["KA07_team"] = dict(layout="ad", sizes=SZ, scene="ka07_office", kick="لأصحاب الشركات",
     h1="فريقك الكردي<br>والعربية العراقية", hs=64, sub="100 درس من الحياة والعمل، مع صوت عراقي أصيل. اسأل عن طلبات الفرق.",
     price="24,000", old="29,000", deadline=NOV)
-S["KA08_new_year"] = dict(layout="ad", sizes=SZ, scene="ka08_newyear", kick="هدية رأس السنة",
+S["KA08_new_year"] = dict(layout="ad", sizes=SZ, scene="ka08_newyear", pos="center 38%", kick="هدية رأس السنة",
     h1="أهدِ زميلك الكردي<br>لغة جديدة", hs=64, sub="كتاب لين: من الكردية إلى العربية العراقية، 100 درس وصوت أصيل.", price="29,000")
 S["KA09_shared_language"] = dict(layout="ad", sizes=SZ, scene="ka07_office", kick="لغة مشتركة في العمل",
     h1="حين يتكلّم الجميع<br>نفس اللغة", hs=64, sub="عندما يتعلّم زملاؤك الكرد العربية العراقية، يصبح العمل أسهل للجميع.", price="29,000")
