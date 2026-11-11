@@ -15,7 +15,7 @@ S["E01_greetings"] = dict(layout="table", scene="e01_greeting", kick="Your first
     rows=[[ku("سڵاو"), lat("slaw"), mean("Hello")], [ku("چۆنیت؟"), lat("chonit?"), mean("How are you?")],
           [ku("باشم، سوپاس", 38), lat("bashim, supas", 28), mean("I'm good, thanks")], [ku("بەخێربێیت", 40), lat("bexêrbêyt"), mean("Welcome")]],
     note="Save this and try it on the next Kurdish person you meet.")
-S["E02_new_sounds"] = dict(layout="list", scene="e02_listen", kick="Pronunciation",
+S["E02_new_sounds"] = dict(layout="list", scene="e02_listen", pos="center 22%", kick="Pronunciation",
     h1="7 Kurdish sounds<br><span class='acc'>English doesn't have</span>", hs=58, photo_h=470, list_top=640, fs=31, gap=12,
     items=["ح <b>ḥ</b>: a breathy h from deep in the throat", "خ <b>kh</b>: like ch in Scottish “loch”", "ع <b>ʕ</b>: a squeeze in the throat",
            "غ <b>gh</b>: like a French r", "ق <b>q</b>: a k from the back of the throat", "ڕ <b>rr</b>: a rolled r, like Spanish “perro”",

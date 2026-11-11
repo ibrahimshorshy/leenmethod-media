@@ -47,6 +47,7 @@
  "E02_new_sounds": {
   "layout": "list",
   "scene": "e02_listen",
+  "pos": "center 22%",
   "kick": "Pronunciation",
   "h1": "7 Kurdish sounds<br><span class='acc'>English doesn't have</span>",
   "hs": 58,
