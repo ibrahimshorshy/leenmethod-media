@@ -6,7 +6,7 @@
   "phone": "",
   "book": false,
   "dir": "ltr",
-  "asr": null
+  "asr": "fa"
  },
  "EV01_cafe": {
   "src": "ev01_cafe",

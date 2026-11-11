@@ -6,7 +6,7 @@
   "phone": "",
   "book": false,
   "dir": "rtl",
-  "asr": null
+  "asr": "fa"
  },
  "KV01_hotel": {
   "src": "kv01_hotel",
