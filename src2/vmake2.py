@@ -15,7 +15,7 @@ PAGES = {
                  cta="داوای بکە لە واتسئاپ", phone="0770 013 7670", book=True, latin=False),
     "arku": dict(spec="vspec_arku.json", label="بالكردية", sub="لين · الكردية السورانية بالحوار", dir="rtl", tdir="rtl",
                  cta="تابعنا: جملة كردية كل يوم", phone="", book=False, latin=True),
-    "enku": dict(spec="vspec_enku.json", label="Kurdish (Sorani)", sub="Leen · Kurdish through conversation", dir="ltr", tdir="ltr",
+    "enku": dict(spec="vspec_enku.json", label="Kurdish (Sorani)", sub="Leen · Kurdish through conversation", dir="rtl", tdir="ltr",
                  cta="Follow for a phrase a day", phone="", book=False, latin=True),
 }
 PHOTO = {
@@ -85,7 +85,8 @@ def build(vid, page, spec):
     mid = ""
     if "phrase" in end:
         ku, lat, mean = end["phrase"]
-        mid = (f'<div class="pcard an2" data-d="0.45"><div class="pk">{ku}</div><div class="pl">{lat}</div><div class="pm" dir="auto">{mean}</div></div>')
+        fs = 132 if len(ku) <= 10 else (110 if len(ku) <= 14 else 90)
+        mid = (f'<div class="pcard an2" data-d="0.45"><div class="pk" style="font-size:{fs}px">{ku}</div><div class="pl">{lat}</div><div class="pm" dir="auto">{mean}</div></div>')
     elif P["book"]:
         mid = f'<img class="book an2" data-d="0.45" src="{B}/book3d.png">'
     phone = f'<span class="lat2">{P["phone"]}</span>' if P["phone"] else ""
