@@ -1,0 +1,452 @@
+{
+ "P01_fusha_vs_iraqi": {
+  "layout": "table",
+  "scene": "p01_market",
+  "kick": "فوسحا یان عێراقی؟",
+  "h1": "لە کتێبدا ئاوا دەینووسن،<br>لە شەقامدا <span class='acc'>ئاوا دەیڵێن</span>",
+  "hs": 56,
+  "cols": [
+   "فوسحا",
+   "عێراقی",
+   "کوردی"
+  ],
+  "rh": 70,
+  "card_top": 690,
+  "rows": [
+   [
+    "<span class=\"ar\" style=\"font-size:34px\" dir=\"rtl\">كيف حالك؟</span>",
+    "<span class=\"ar\" style=\"font-size:38px\" dir=\"rtl\">شلونك؟</span>",
+    "<span style=\"font-size:32px;font-weight:700;color:#0B2A6B\">چۆنیت؟</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:34px\" dir=\"rtl\">ماذا تريد؟</span>",
+    "<span class=\"ar\" style=\"font-size:38px\" dir=\"rtl\">شتريد؟</span>",
+    "<span style=\"font-size:32px;font-weight:700;color:#0B2A6B\">چیت دەوێت؟</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:34px\" dir=\"rtl\">الآن</span>",
+    "<span class=\"ar\" style=\"font-size:38px\" dir=\"rtl\">هسّه</span>",
+    "<span style=\"font-size:32px;font-weight:700;color:#0B2A6B\">ئێستا</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:34px\" dir=\"rtl\">لا يوجد</span>",
+    "<span class=\"ar\" style=\"font-size:38px\" dir=\"rtl\">ماكو</span>",
+    "<span style=\"font-size:32px;font-weight:700;color:#0B2A6B\">نییە</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:34px\" dir=\"rtl\">جيد</span>",
+    "<span class=\"ar\" style=\"font-size:38px\" dir=\"rtl\">زين</span>",
+    "<span style=\"font-size:32px;font-weight:700;color:#0B2A6B\">باشە</span>"
+   ]
+  ],
+  "cell_styles": [
+   "opacity:.55",
+   "",
+   ""
+  ],
+  "note": "ئەم کتێبە ئەو عەرەبییەت فێر دەکات کە لە واقیعدا دەیبیستیت.",
+  "note_y": 1196
+ },
+ "P02_five_words": {
+  "layout": "table",
+  "scene": "p02_teahouse",
+  "kick": "هەموو ڕۆژێک دەیبیستیت",
+  "h1": "5 وشەی عێراقی<br>کە <span class='acc'>دەبێت بیانزانیت</span>",
+  "hs": 58,
+  "rh": 82,
+  "card_top": 720,
+  "rows": [
+   [
+    "<span class=\"ar\" style=\"font-size:42px\" dir=\"rtl\">هسّه</span>",
+    "<span style=\"font-size:34px;font-weight:700;color:#0B2A6B\">ئێستا</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:42px\" dir=\"rtl\">اكو / ماكو</span>",
+    "<span style=\"font-size:34px;font-weight:700;color:#0B2A6B\">هەیە / نییە</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:42px\" dir=\"rtl\">شكو ماكو؟</span>",
+    "<span style=\"font-size:34px;font-weight:700;color:#0B2A6B\">چی هەیە؟ چی باسە؟</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:42px\" dir=\"rtl\">زين</span>",
+    "<span style=\"font-size:34px;font-weight:700;color:#0B2A6B\">باش</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:42px\" dir=\"rtl\">عيني</span>",
+    "<span style=\"font-size:34px;font-weight:700;color:#0B2A6B\">گیانەکەم، ئازیزم</span>"
+   ]
+  ],
+  "note": "کامیانت پێشتر بیستووە؟",
+  "note_y": 1178
+ },
+ "P03_taxi": {
+  "layout": "table",
+  "scene": "p03_taxi",
+  "kick": "لە تەکسیدا",
+  "h1": "4 ڕستە بۆ<br><span class='acc'>یەکەم سواربوونی تەکسی</span>",
+  "hs": 58,
+  "rh": 96,
+  "card_top": 720,
+  "rows": [
+   [
+    "<span class=\"ar\" style=\"font-size:38px\" dir=\"rtl\">عمّو، توديني للسوق؟</span>",
+    "<span style=\"font-size:30px;font-weight:700;color:#0B2A6B\">مامە، دەمبەیتە بازاڕ؟</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:38px\" dir=\"rtl\">إي، تفضّل اصعد.</span>",
+    "<span style=\"font-size:30px;font-weight:700;color:#0B2A6B\">بەڵێ، فەرموو سەرکەوە.</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:38px\" dir=\"rtl\">بيش؟</span>",
+    "<span style=\"font-size:30px;font-weight:700;color:#0B2A6B\">بە چەند؟</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:38px\" dir=\"rtl\">خمسة آلاف.</span>",
+    "<span style=\"font-size:30px;font-weight:700;color:#0B2A6B\">پێنج هەزار.</span>"
+   ]
+  ],
+  "note": "هەموو دیالۆگێکی کتێبەکە دەنگی عێراقیی ڕەسەنی هەیە.",
+  "note_y": 1170
+ },
+ "P04_seven_steps": {
+  "layout": "list",
+  "scene": "p04_flatlay",
+  "kick": "وانەی ڕۆژانەت",
+  "h1": "یەک وانە لە <span class='acc'>7 هەنگاودا</span>",
+  "hs": 62,
+  "photo_h": 540,
+  "pos": "center 42%",
+  "list_top": 665,
+  "numbered": true,
+  "fs": 33,
+  "gap": 16,
+  "items": [
+   "تەنیا گوێ بگرە",
+   "گوێ بگرە و وەرگێڕانەکە بخوێنەرەوە",
+   "گوێ بگرە و دەقە عەرەبییەکە بخوێنەرەوە",
+   "تێبینییەکان بخوێنەرەوە",
+   "بە دەنگی بەرز بیڵێ و لەگەڵ دەنگەکە دووبارەی بکەرەوە",
+   "سێ ڕاهێنانەکە بکە",
+   "جارێکی تر بیخوێنەرەوە و لە خشتەکەدا نیشانەی بکە"
+  ],
+  "note": "تەنیا 20–30 خولەک لە ڕۆژێکدا",
+  "note_y": 1185
+ },
+ "P05_gender_mistake": {
+  "layout": "table",
+  "scene": "p05_office",
+  "kick": "هەڵەیەکی باو",
+  "h1": "لە کوردیدا «ئەو» بۆ کوڕ و کچ یەکە،<br><span class='acc'>لە عەرەبیدا نا!</span>",
+  "hs": 50,
+  "rh": 92,
+  "card_top": 720,
+  "rows": [
+   [
+    "<span class=\"ar\" style=\"font-size:44px\" dir=\"rtl\">هو إجه</span>",
+    "<span style=\"font-size:32px;font-weight:700;color:#0B2A6B\">ئەو (کوڕ) هات</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:44px\" dir=\"rtl\">هي إجت</span>",
+    "<span style=\"font-size:32px;font-weight:700;color:#0B2A6B\">ئەو (کچ) هات</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:40px\" dir=\"rtl\"><s style='color:#D64545'>أختي إجه</s></span>",
+    "<span style=\"font-size:30px;font-weight:800;color:#D64545\">هەڵە ✗</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:44px\" dir=\"rtl\">أختي إجت</span>",
+    "<span style=\"font-size:30px;font-weight:800;color:#2E8B57\">خوشکەکەم هات ✓</span>"
+   ]
+  ],
+  "note": "ئەم جیاوازییە لە تێبینییەکانی هەر وانەیەکدا ڕوون دەکرێتەوە.",
+  "note_y": 1172
+ },
+ "P06_who_for": {
+  "layout": "list",
+  "scene": "p06_people",
+  "kick": "ئەم کتێبە بۆ کێیە؟",
+  "h1": "بۆ هەر کەسێک کە<br><span class='acc'>عەرەبی پێویستە</span>",
+  "hs": 60,
+  "photo_h": 560,
+  "list_top": 760,
+  "fs": 36,
+  "gap": 20,
+  "items": [
+   "خوێندکاری زانکۆ",
+   "کارمەندی کۆمپانیا و ڕێکخراوەکان",
+   "پزیشک و پەرستار",
+   "شوفێر و بازرگان",
+   "هەر کەسێک هاوڕێ یان هاوکاری عەرەبی هەیە"
+  ],
+  "note": "تۆ کامیانیت؟",
+  "note_y": 1186
+ },
+ "P07_inside": {
+  "layout": "list",
+  "scene": "p07_desk",
+  "kick": "لە ناو کتێبەکەدا",
+  "h1": "چی لە کتێبەکەدا هەیە؟",
+  "hs": 62,
+  "photo_h": 640,
+  "pos": "center 28%",
+  "list_top": 790,
+  "fs": 34,
+  "gap": 20,
+  "items": [
+   "100 وانە لە چوار قۆناغدا",
+   "وەرگێڕانی کوردی، دێڕ بە دێڕ",
+   "تێبینی: وشە، ڕێزمان و کولتوور",
+   "سێ ڕاهێنان و وەڵام لە هەر وانەیەکدا",
+   "دەنگی عێراقی ڕەسەن بۆ هەموو وانەکان",
+   "پاشکۆی ڕێزمانی کورت"
+  ],
+  "note": null
+ },
+ "P08_journey": {
+  "layout": "stages",
+  "scene": "p08_road",
+  "h1": "گەشتی 100 وانە",
+  "sub": "لە یەکەم سڵاوەوە تا کۆبوونەوە و دانوستان",
+  "stages": [
+   [
+    "1–21",
+    "سڵاوکردن، چایخانە، نرخ، ڕێگا، تەکسی"
+   ],
+   [
+    "22–50",
+    "ڕابردوو و داهاتوو، هوتێل، پزیشک، بانگهێشت"
+   ],
+   [
+    "51–76",
+    "کۆبوونەوە، دانوستان، چاوپێکەوتنی کار، فەرمانگە"
+   ],
+   [
+    "77–100",
+    "بازرگانی، پەندی پێشینان، گفتوگۆ، زمانی فەرمی"
+   ]
+  ]
+ },
+ "P09_two_people": {
+  "layout": "full",
+  "scene": "p09_reflection",
+  "where": "bottom",
+  "y": 900,
+  "h1": "تۆ دوو کەسیت،<br><span class='acc'>کاتێک دوو زمان دەزانیت</span>",
+  "hs": 72,
+  "sub": "یەکێکیان بە کوردی پێدەکەنێت، ئەوی تریان بە عەرەبی.",
+  "ss": 34
+ },
+ "P10_why_leen": {
+  "layout": "full",
+  "scene": "p10_hand",
+  "where": "top",
+  "y": 110,
+  "kick": "بۆچی «لین»؟",
+  "h1": "لین ناوی کچەکەمە",
+  "hs": 62,
+  "sub": "لە عەرەبیدا بە واتای «نەرم و ناسک» دێت. دەمانەوێت فێربوونیش ئاوا بێت: هەنگاوێکی بچووک و نەرم، هەموو ڕۆژێک.<br><span style='font-weight:800;color:#fff'>— ئیبراهیم، دامەزرێنەری لین</span>",
+  "ss": 30
+ },
+ "A01_240_per_lesson": {
+  "layout": "ad",
+  "sizes": [
+   [
+    1080,
+    1350
+   ],
+   [
+    1080,
+    1920
+   ]
+  ],
+  "scene": "a01_cafe",
+  "kick": "نرخی تایبەتی مانگی 11",
+  "h1": "هەر وانەیەک<br>تەنیا <span class='lat' style='color:#FFD24A'>240</span> دینار",
+  "hs": 74,
+  "sub": "100 وانە بە عەرەبیی عێراقی، لەگەڵ دەنگی ڕەسەن بۆ هەموو وانەکان.",
+  "price": "24,000",
+  "old": "29,000",
+  "deadline": "نرخی تایبەت تەنیا تا کۆتایی مانگی 11"
+ },
+ "A02_deadline": {
+  "layout": "ad",
+  "sizes": [
+   [
+    1080,
+    1350
+   ],
+   [
+    1080,
+    1920
+   ]
+  ],
+  "scene": "a02_evening",
+  "kick": "ماوەیەکی کەم ماوە",
+  "h1": "<span class='lat'>24,000</span> دینار<br>تەنیا تا کۆتایی مانگی 11",
+  "hs": 66,
+  "sub": "لە 1ی مانگی 12 نرخەکە دەبێتە 29,000 دینار. ئێستا داوای بکە.",
+  "price": "24,000",
+  "old": "29,000"
+ },
+ "A03_guarantee": {
+  "layout": "ad",
+  "sizes": [
+   [
+    1080,
+    1350
+   ],
+   [
+    1080,
+    1920
+   ]
+  ],
+  "scene": "a03_study",
+  "kick": "بێ مەترسی",
+  "h1": "7 وانە تاقی بکەرەوە",
+  "hs": 74,
+  "sub": "ئەگەر لە ماوەی 7 وانەدا سوودت نەبینی، پارەکەت وەردەگریتەوە.",
+  "price": "24,000",
+  "old": "29,000",
+  "deadline": "نرخی تایبەت تەنیا تا کۆتایی مانگی 11"
+ },
+ "A04_street_arabic": {
+  "layout": "ad",
+  "sizes": [
+   [
+    1080,
+    1350
+   ],
+   [
+    1080,
+    1920
+   ]
+  ],
+  "scene": "a04_market",
+  "kick": "عەرەبیی ڕاستەقینە",
+  "h1": "فوسحا دەزانیت،<br>بەڵام لە شەقامدا تێناگەیت؟",
+  "hs": 64,
+  "sub": "فێری ئەو عەرەبییە ببە کە خەڵک بەڕاستی قسەی پێدەکەن.",
+  "price": "24,000",
+  "old": "29,000",
+  "deadline": "نرخی تایبەت تەنیا تا کۆتایی مانگی 11"
+ },
+ "A05_career": {
+  "layout": "ad",
+  "sizes": [
+   [
+    1080,
+    1350
+   ],
+   [
+    1080,
+    1920
+   ]
+  ],
+  "scene": "a05_interview",
+  "book": true,
+  "kick": "بۆ کار و داهاتوو",
+  "h1": "عەرەبی بزانە،<br>دەرگای زیاتر بکەرەوە",
+  "hs": 68,
+  "sub": "لە چاوپێکەوتنی کارەوە تا کۆبوونەوە: 100 وانە بە عەرەبیی عێراقی.",
+  "price": "24,000",
+  "old": "29,000",
+  "deadline": "نرخی تایبەت تەنیا تا کۆتایی مانگی 11"
+ },
+ "A06_course_in_book": {
+  "layout": "ad",
+  "sizes": [
+   [
+    1080,
+    1350
+   ],
+   [
+    1080,
+    1920
+   ]
+  ],
+  "scene": "a06_desk",
+  "kick": "کتێب نییە، کۆرسە",
+  "h1": "کۆرسێکی 100 ڕۆژە<br>لە ناو یەک کتێبدا",
+  "hs": 68,
+  "sub": "هەر وانەیەک تەنیا 290 دینار، لەگەڵ دەنگی عێراقیی ڕەسەن.",
+  "price": "29,000"
+ },
+ "A07_gift": {
+  "layout": "ad",
+  "sizes": [
+   [
+    1080,
+    1350
+   ],
+   [
+    1080,
+    1920
+   ]
+  ],
+  "scene": "a07_gift",
+  "kick": "دیاریی ساڵی نوێ",
+  "h1": "دیارییەک کە<br>زمانێک دەبەخشێت",
+  "hs": 70,
+  "sub": "بۆ ساڵی نوێ، زمانێکی نوێ بە دیاری بدە.",
+  "price": "29,000"
+ },
+ "A08_20_minutes": {
+  "layout": "ad",
+  "sizes": [
+   [
+    1080,
+    1350
+   ],
+   [
+    1080,
+    1920
+   ]
+  ],
+  "scene": "a08_balcony",
+  "kick": "ڕۆژانە 20 خولەک",
+  "h1": "20 خولەک لە ڕۆژێکدا.<br>100 ڕۆژ.",
+  "hs": 70,
+  "sub": "هەنگاو بە هەنگاو، تا بە عەرەبیی عێراقی قسە دەکەیت.",
+  "price": "29,000"
+ },
+ "A09_audio": {
+  "layout": "ad",
+  "sizes": [
+   [
+    1080,
+    1350
+   ],
+   [
+    1080,
+    1920
+   ]
+  ],
+  "scene": "a09_phone",
+  "kick": "دەنگی عێراقیی ڕەسەن",
+  "h1": "سکان بکە، گوێ بگرە،<br>دووبارەی بکەرەوە",
+  "hs": 66,
+  "sub": "هەموو 100 وانەکە دەنگی ڕەسەنی عێراقییان هەیە، لە تێلیگرام.",
+  "price": "29,000"
+ },
+ "A10_nurse": {
+  "layout": "ad",
+  "sizes": [
+   [
+    1080,
+    1350
+   ],
+   [
+    1080,
+    1920
+   ]
+  ],
+  "scene": "a10_nurse",
+  "book": true,
+  "kick": "بۆ پزیشک و پەرستار",
+  "h1": "نەخۆشەکەت<br>بە عەرەبی قسە دەکات؟",
+  "hs": 68,
+  "sub": "بە ئاسانی لێی تێبگە و بە عەرەبیی عێراقی وەڵامی بدەرەوە.",
+  "price": "29,000"
+ }
+}

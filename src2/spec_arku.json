@@ -1,0 +1,527 @@
+{
+ "_meta": {
+  "theme": "navy",
+  "foot": "تعلّم الكردية السورانية · لين",
+  "cta": "اطلب عبر واتساب",
+  "badge": "ضمان 7 دروس",
+  "unit": "دينار"
+ },
+ "K01_greetings": {
+  "layout": "table",
+  "scene": "k01_greeting",
+  "kick": "أول كلمات بالكردية",
+  "h1": "قل مرحباً<br><span class='acc'>بالكردية السورانية</span>",
+  "hs": 58,
+  "cols": [
+   "بالكردية",
+   "النطق",
+   "المعنى"
+  ],
+  "rh": 80,
+  "card_top": 700,
+  "rows": [
+   [
+    "<span class=\"ar\" style=\"font-size:42px\">سڵاو</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1673C0\">slaw</span>",
+    "<span style=\"font-size:32px;font-weight:700;color:#0B2A6B\">مرحباً</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:42px\">چۆنیت؟</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1673C0\">chonit?</span>",
+    "<span style=\"font-size:32px;font-weight:700;color:#0B2A6B\">كيف حالك؟</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:38px\">باشم، سوپاس</span>",
+    "<span class=\"lat\" style=\"font-size:28px;font-weight:700;color:#1673C0\">bashim, supas</span>",
+    "<span style=\"font-size:32px;font-weight:700;color:#0B2A6B\">بخير، شكراً</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:40px\">بەخێربێیت</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1673C0\">bexêrbêyt</span>",
+    "<span style=\"font-size:32px;font-weight:700;color:#0B2A6B\">أهلاً وسهلاً</span>"
+   ]
+  ],
+  "note": "احفظ المنشور، وقلها لأول صديق كردي تقابله."
+ },
+ "K02_false_friends": {
+  "layout": "table",
+  "scene": "k02_tree",
+  "kick": "انتبه!",
+  "h1": "كلمات تشبه العربية…<br><span class='acc'>لكن معناها مختلف</span>",
+  "hs": 58,
+  "cols": [
+   "بالكردية",
+   "النطق",
+   "المعنى"
+  ],
+  "rh": 90,
+  "card_top": 720,
+  "rows": [
+   [
+    "<span class=\"ar\" style=\"font-size:46px\">باب</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1673C0\">bab</span>",
+    "<span style=\"font-size:32px;font-weight:700;color:#0B2A6B\">أب</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:46px\">دار</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1673C0\">dar</span>",
+    "<span style=\"font-size:32px;font-weight:700;color:#0B2A6B\">شجرة</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:46px\">شار</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1673C0\">shar</span>",
+    "<span style=\"font-size:32px;font-weight:700;color:#0B2A6B\">مدينة</span>"
+   ]
+  ],
+  "note": "لهذا نتعلّم الكلمات داخل جُمل، لا وحدها."
+ },
+ "K03_numbers": {
+  "layout": "table",
+  "scene": "k03_count",
+  "kick": "الأرقام",
+  "h1": "من 1 إلى 5<br><span class='acc'>بالكردية</span>",
+  "hs": 60,
+  "cols": [
+   "الرقم",
+   "بالكردية",
+   "النطق"
+  ],
+  "rh": 74,
+  "card_top": 690,
+  "rows": [
+   [
+    "<span class=\"lat\" style=\"font-size:40px;font-weight:700;color:#1673C0\">1</span>",
+    "<span class=\"ar\" style=\"font-size:42px\">یەک</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1673C0\">yek</span>"
+   ],
+   [
+    "<span class=\"lat\" style=\"font-size:40px;font-weight:700;color:#1673C0\">2</span>",
+    "<span class=\"ar\" style=\"font-size:42px\">دوو</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1673C0\">dû</span>"
+   ],
+   [
+    "<span class=\"lat\" style=\"font-size:40px;font-weight:700;color:#1673C0\">3</span>",
+    "<span class=\"ar\" style=\"font-size:42px\">سێ</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1673C0\">sê</span>"
+   ],
+   [
+    "<span class=\"lat\" style=\"font-size:40px;font-weight:700;color:#1673C0\">4</span>",
+    "<span class=\"ar\" style=\"font-size:42px\">چوار</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1673C0\">chwar</span>"
+   ],
+   [
+    "<span class=\"lat\" style=\"font-size:40px;font-weight:700;color:#1673C0\">5</span>",
+    "<span class=\"ar\" style=\"font-size:42px\">پێنج</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1673C0\">pênj</span>"
+   ]
+  ],
+  "note": "جرّب: كم عمرك بالكردية؟ اكتبها في التعليقات."
+ },
+ "K04_market": {
+  "layout": "table",
+  "scene": "k04_bazaar",
+  "kick": "في السوق",
+  "h1": "اشترِ بالكردية<br><span class='acc'>من أول مرة</span>",
+  "hs": 60,
+  "cols": [
+   "بالكردية",
+   "النطق",
+   "المعنى"
+  ],
+  "rh": 84,
+  "card_top": 700,
+  "rows": [
+   [
+    "<span class=\"ar\" style=\"font-size:38px\">ئەمە بە چەندە؟</span>",
+    "<span class=\"lat\" style=\"font-size:26px;font-weight:700;color:#1673C0\">eme be chende?</span>",
+    "<span style=\"font-size:32px;font-weight:700;color:#0B2A6B\">بكم هذا؟</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:40px\">زۆر گرانە</span>",
+    "<span class=\"lat\" style=\"font-size:28px;font-weight:700;color:#1673C0\">zor girane</span>",
+    "<span style=\"font-size:32px;font-weight:700;color:#0B2A6B\">غالٍ جداً</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:42px\">باشە</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1673C0\">bashe</span>",
+    "<span style=\"font-size:32px;font-weight:700;color:#0B2A6B\">حسناً</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:42px\">سوپاس</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1673C0\">supas</span>",
+    "<span style=\"font-size:32px;font-weight:700;color:#0B2A6B\">شكراً</span>"
+   ]
+  ],
+  "note": "«بە چەندە؟» أهم سؤال في أي سوق كردي."
+ },
+ "K05_letters": {
+  "layout": "list",
+  "scene": "k05_student",
+  "kick": "الحروف الكردية",
+  "h1": "7 حروف كردية<br><span class='acc'>ليست في العربية</span>",
+  "hs": 58,
+  "photo_h": 470,
+  "list_top": 640,
+  "fs": 33,
+  "gap": 14,
+  "items": [
+   "پ مثل <span class='lat'>P</span> في <span class='lat'>Pizza</span>",
+   "چ مثل <span class='lat'>Ch</span> في <span class='lat'>Chocolate</span>",
+   "ژ مثل <span class='lat'>s</span> في <span class='lat'>Television</span>",
+   "ڤ مثل <span class='lat'>V</span> في <span class='lat'>Video</span>",
+   "گ مثل <span class='lat'>G</span> في <span class='lat'>Google</span>",
+   "ڵ لام مفخّمة، كاللام في «الله»",
+   "ڕ راء قوية مكرّرة"
+  ],
+  "note": "والحركات تُكتب حروفاً: لا تحتاج إلى تشكيل.",
+  "note_y": 1180
+ },
+ "K06_erbil_tourist": {
+  "layout": "table",
+  "scene": "k06_citadel",
+  "kick": "للسائح",
+  "h1": "4 جمل كردية<br><span class='acc'>لرحلتك إلى أربيل</span>",
+  "hs": 58,
+  "cols": [
+   "بالكردية",
+   "النطق",
+   "المعنى"
+  ],
+  "rh": 84,
+  "card_top": 700,
+  "rows": [
+   [
+    "<span class=\"ar\" style=\"font-size:38px\">قەڵا لە کوێیە؟</span>",
+    "<span class=\"lat\" style=\"font-size:26px;font-weight:700;color:#1673C0\">qela le kwêye?</span>",
+    "<span style=\"font-size:32px;font-weight:700;color:#0B2A6B\">أين القلعة؟</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:42px\">تکایە</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1673C0\">tikaye</span>",
+    "<span style=\"font-size:32px;font-weight:700;color:#0B2A6B\">من فضلك</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:42px\">ببورە</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1673C0\">bibure</span>",
+    "<span style=\"font-size:32px;font-weight:700;color:#0B2A6B\">عفواً / آسف</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:42px\">ماڵئاوا</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1673C0\">maława</span>",
+    "<span style=\"font-size:32px;font-weight:700;color:#0B2A6B\">مع السلامة</span>"
+   ]
+  ],
+  "note": "الناس هنا يفرحون كثيراً حين تحاول بلغتهم."
+ },
+ "K07_food": {
+  "layout": "table",
+  "scene": "k07_breakfast",
+  "kick": "على المائدة",
+  "h1": "كلمات الطعام<br><span class='acc'>بالكردية</span>",
+  "hs": 60,
+  "cols": [
+   "بالكردية",
+   "النطق",
+   "المعنى"
+  ],
+  "rh": 80,
+  "card_top": 700,
+  "rows": [
+   [
+    "<span class=\"ar\" style=\"font-size:42px\">نان</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1673C0\">nan</span>",
+    "<span style=\"font-size:32px;font-weight:700;color:#0B2A6B\">خبز</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:42px\">ئاو</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1673C0\">aw</span>",
+    "<span style=\"font-size:32px;font-weight:700;color:#0B2A6B\">ماء</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:42px\">چا</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1673C0\">cha</span>",
+    "<span style=\"font-size:32px;font-weight:700;color:#0B2A6B\">شاي</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:40px\">نۆشی گیان!</span>",
+    "<span class=\"lat\" style=\"font-size:28px;font-weight:700;color:#1673C0\">noshî gyan!</span>",
+    "<span style=\"font-size:32px;font-weight:700;color:#0B2A6B\">بالعافية!</span>"
+   ]
+  ],
+  "note": "قل «نۆشی گیان» لمن يأكل معك، وسترى الابتسامة."
+ },
+ "K08_why": {
+  "layout": "list",
+  "scene": "k08_friends",
+  "kick": "لماذا الكردية؟",
+  "h1": "5 أسباب لتتعلّم<br><span class='acc'>الكردية السورانية</span>",
+  "hs": 58,
+  "photo_h": 540,
+  "list_top": 740,
+  "fs": 34,
+  "gap": 20,
+  "items": [
+   "لتعمل وتعيش في كردستان براحة",
+   "لتقترب من أصدقائك وجيرانك الكرد",
+   "لتسافر وتتحدث مع الناس مباشرة",
+   "لتفهم الأغاني والأفلام الكردية",
+   "لأن الناس يفرحون حين تكلّمهم بلغتهم"
+  ],
+  "note": "أي سبب هو سببك؟",
+  "note_y": 1186
+ },
+ "K09_kind_words": {
+  "layout": "table",
+  "scene": "k09_host",
+  "kick": "تعابير لطيفة",
+  "h1": "كلمات تفتح القلوب<br><span class='acc'>بالكردية</span>",
+  "hs": 58,
+  "cols": [
+   "بالكردية",
+   "النطق",
+   "المعنى"
+  ],
+  "rh": 84,
+  "card_top": 700,
+  "rows": [
+   [
+    "<span class=\"ar\" style=\"font-size:42px\">سەرچاو</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1673C0\">serchaw</span>",
+    "<span style=\"font-size:32px;font-weight:700;color:#0B2A6B\">على عيني</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:36px\">دەستت خۆش بێت</span>",
+    "<span class=\"lat\" style=\"font-size:26px;font-weight:700;color:#1673C0\">destit xosh bêt</span>",
+    "<span style=\"font-size:32px;font-weight:700;color:#0B2A6B\">تسلم إيدك</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:40px\">زۆر سوپاس</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1673C0\">zor supas</span>",
+    "<span style=\"font-size:32px;font-weight:700;color:#0B2A6B\">شكراً جزيلاً</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:42px\">گیان</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1673C0\">gyan</span>",
+    "<span style=\"font-size:32px;font-weight:700;color:#0B2A6B\">عزيزي</span>"
+   ]
+  ],
+  "note": "أيّها ستقولها اليوم؟"
+ },
+ "K10_two_people": {
+  "layout": "full",
+  "scene": "k10_portrait",
+  "where": "bottom",
+  "y": 900,
+  "h1": "أنت شخصان<br><span class='acc'>حين تعرف لغتين</span>",
+  "hs": 76,
+  "sub": "واحد يضحك بالعربية، والآخر بالكردية.",
+  "ss": 36
+ },
+ "KA01_learn_kurdish": {
+  "layout": "ad",
+  "sizes": [
+   [
+    1080,
+    1350
+   ],
+   [
+    1080,
+    1920
+   ]
+  ],
+  "scene": "ka01_cafe",
+  "kick": "الكردية السورانية بالحوار",
+  "h1": "تعلّم الكردية<br>خطوة لطيفة كل يوم",
+  "hs": 68,
+  "sub": "درس قصير كل يوم: استمع، كرّر، تكلّم. وكتاب لين للكردية قادم قريباً.",
+  "cta": "سجّل في قائمة الانتظار عبر واتساب",
+  "badge": "",
+  "cta_size": 32
+ },
+ "KA02_live_in_kurdistan": {
+  "layout": "ad",
+  "sizes": [
+   [
+    1080,
+    1350
+   ],
+   [
+    1080,
+    1920
+   ]
+  ],
+  "scene": "ka02_neighbors",
+  "kick": "تعيش في كردستان؟",
+  "h1": "كلّم جيرانك وزملاءك<br>بلغتهم",
+  "hs": 64,
+  "sub": "الكردية السورانية بالحوار، من التحية إلى العمل. سجّل اسمك لتعرف موعد الإطلاق أولاً.",
+  "cta": "سجّل في قائمة الانتظار عبر واتساب",
+  "badge": "",
+  "cta_size": 32
+ },
+ "KA03_book_soon": {
+  "layout": "ad",
+  "sizes": [
+   [
+    1080,
+    1350
+   ],
+   [
+    1080,
+    1920
+   ]
+  ],
+  "scene": "ka03_desk",
+  "kick": "قريباً",
+  "h1": "كتاب لين<br>للكردية السورانية",
+  "hs": 70,
+  "sub": "100 درس بالحوار، بصوت كردي أصيل. سجّل الآن وكن أول من يعرف.",
+  "cta": "سجّل في قائمة الانتظار عبر واتساب",
+  "badge": "",
+  "cta_size": 32
+ },
+ "KA04_tourist": {
+  "layout": "ad",
+  "sizes": [
+   [
+    1080,
+    1350
+   ],
+   [
+    1080,
+    1920
+   ]
+  ],
+  "scene": "k06_citadel",
+  "kick": "مسافر إلى أربيل؟",
+  "h1": "جملة كردية جديدة<br>كل يوم",
+  "hs": 68,
+  "sub": "تابع صفحتنا وتعلّم ما تحتاجه في رحلتك: التحية، السوق، المطعم، التاكسي.",
+  "cta": "تابعنا الآن",
+  "phone": "",
+  "icon": "follow",
+  "badge": ""
+ },
+ "KA05_not_hard": {
+  "layout": "ad",
+  "sizes": [
+   [
+    1080,
+    1350
+   ],
+   [
+    1080,
+    1920
+   ]
+  ],
+  "scene": "k05_student",
+  "kick": "الكردية ليست صعبة",
+  "h1": "تقرأ العربية؟<br>قطعت نصف الطريق",
+  "hs": 68,
+  "sub": "الكردية تُكتب بالحروف العربية، والحركات تُكتب حروفاً. ابدأ اليوم.",
+  "cta": "تابعنا الآن",
+  "phone": "",
+  "icon": "follow",
+  "badge": ""
+ },
+ "KA06_gift_friend": {
+  "layout": "ad",
+  "sizes": [
+   [
+    1080,
+    1350
+   ],
+   [
+    1080,
+    1920
+   ]
+  ],
+  "scene": "ka06_gift",
+  "kick": "هدية لصديقك الكردي",
+  "h1": "صديقك الكردي يحتاج<br>العربية العراقية؟",
+  "hs": 62,
+  "sub": "أهدِه كتاب لين: 100 درس من الكردية إلى العربية العراقية، بصوت عراقي أصيل.",
+  "price": "24,000",
+  "old": "29,000",
+  "deadline": "السعر الخاص حتى نهاية الشهر 11"
+ },
+ "KA07_team": {
+  "layout": "ad",
+  "sizes": [
+   [
+    1080,
+    1350
+   ],
+   [
+    1080,
+    1920
+   ]
+  ],
+  "scene": "ka07_office",
+  "kick": "لأصحاب الشركات",
+  "h1": "فريقك الكردي<br>والعربية العراقية",
+  "hs": 64,
+  "sub": "100 درس من الحياة والعمل، مع صوت عراقي أصيل. اسأل عن طلبات الفرق.",
+  "price": "24,000",
+  "old": "29,000",
+  "deadline": "السعر الخاص حتى نهاية الشهر 11"
+ },
+ "KA08_new_year": {
+  "layout": "ad",
+  "sizes": [
+   [
+    1080,
+    1350
+   ],
+   [
+    1080,
+    1920
+   ]
+  ],
+  "scene": "ka08_newyear",
+  "pos": "center 38%",
+  "kick": "هدية رأس السنة",
+  "h1": "أهدِ زميلك الكردي<br>لغة جديدة",
+  "hs": 64,
+  "sub": "كتاب لين: من الكردية إلى العربية العراقية، 100 درس وصوت أصيل.",
+  "price": "29,000"
+ },
+ "KA09_shared_language": {
+  "layout": "ad",
+  "sizes": [
+   [
+    1080,
+    1350
+   ],
+   [
+    1080,
+    1920
+   ]
+  ],
+  "scene": "ka07_office",
+  "kick": "لغة مشتركة في العمل",
+  "h1": "حين يتكلّم الجميع<br>نفس اللغة",
+  "hs": 64,
+  "sub": "عندما يتعلّم زملاؤك الكرد العربية العراقية، يصبح العمل أسهل للجميع.",
+  "price": "29,000"
+ },
+ "KA10_gift_language": {
+  "layout": "ad",
+  "sizes": [
+   [
+    1080,
+    1350
+   ],
+   [
+    1080,
+    1920
+   ]
+  ],
+  "scene": "ka06_gift",
+  "kick": "هدية مختلفة",
+  "h1": "أهدِ لغة،<br>لا مجرد كتاب",
+  "hs": 70,
+  "sub": "لصديقك أو زميلك الكردي: 100 درس من الكردية إلى العربية العراقية.",
+  "price": "29,000"
+ }
+}
