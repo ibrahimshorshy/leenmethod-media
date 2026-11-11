@@ -36,6 +36,9 @@ body{{font-family:V,P,sans-serif;color:#fff;direction:rtl}}
 .lime{{color:#B8E36A}}
 .ar{{font-family:V,P,sans-serif;font-weight:800;color:#fff}}
 .lat{{font-family:P,V,sans-serif;direction:ltr;unicode-bidi:isolate}}
+.card .ar{{color:#0B2A6B}}
+.panel{{position:absolute;left:0;width:100%;background:linear-gradient(180deg,#0E3C88 0%,#0B2A6B 55%,#2B3C9E 100%)}}
+.topfade{{position:absolute;left:0;top:0;width:100%;height:220px;background:linear-gradient(180deg,rgba(4,20,50,.55),rgba(4,20,50,0))}}
 .card{{background:rgba(255,255,255,.96);color:#0B2A6B;border-radius:34px;box-shadow:0 18px 50px rgba(4,23,48,.30)}}
 .row{{display:flex;align-items:center;justify-content:space-between;gap:18px}}
 .foot{{position:absolute;left:64px;right:64px;display:flex;align-items:center;justify-content:space-between;
@@ -73,6 +76,12 @@ def photo(scene, h, top=0, pos="center"):
     return f'<img class="photo" src="{G}/{scene}.png" style="top:{top}px;height:{h}px;object-position:{pos}">'
 
 
+def band(ph, fh=260):
+    """photo bottom fade into a solid panel colour, plus a soft top fade so the logo reads."""
+    return (f'<div class="panel" style="top:{ph - 2}px;bottom:0"></div>'
+            + fade(ph - fh, fh + 2, "to bottom", "rgba(14,60,136,0)", "rgba(14,60,136,1)") + '<div class="topfade"></div>')
+
+
 def fade(top, h, d="to bottom", a="rgba(11,42,107,0)", b="rgba(11,42,107,1)"):
     return f'<div class="fade" style="top:{top}px;height:{h}px;background:linear-gradient({d},{a},{b})"></div>'
 
@@ -95,7 +104,7 @@ def esc(s):
 def post_table(p, w=1080, h=1350):
     """Photo strip on top, headline, white card with 2-3 column rows."""
     ph = p.get("photo_h", 470)
-    b = photo(p["scene"], ph, 0, p.get("pos", "center")) + fade(ph - 260, 262)
+    b = photo(p["scene"], ph, 0, p.get("pos", "center")) + band(ph)
     b += logo(56, 44)
     y = ph - 70
     b += (f'<div style="position:absolute;right:64px;left:64px;top:{y}px">'
@@ -125,7 +134,7 @@ def post_table(p, w=1080, h=1350):
 
 def post_list(p, w=1080, h=1350):
     ph = p.get("photo_h", 520)
-    b = photo(p["scene"], ph, 0, p.get("pos", "center")) + fade(ph - 280, 282)
+    b = photo(p["scene"], ph, 0, p.get("pos", "center")) + band(ph)
     b += logo(56, 44)
     y = ph - 80
     b += (f'<div style="position:absolute;right:64px;left:64px;top:{y}px">'
@@ -144,7 +153,7 @@ def post_list(p, w=1080, h=1350):
 
 def post_full(p, w=1080, h=1350):
     """Full-bleed photo with text block top or bottom."""
-    b = photo(p["scene"], h, 0, p.get("pos", "center"))
+    b = photo(p["scene"], h, 0, p.get("pos", "center")) + '<div class="topfade"></div>'
     where = p.get("where", "bottom")
     if where == "bottom":
         b += fade(h * .38, h * .62, "to bottom", "rgba(8,30,80,0)", "rgba(8,30,80,.94)")
@@ -164,7 +173,7 @@ def post_full(p, w=1080, h=1350):
 
 def post_stages(p, w=1080, h=1350):
     ph = 430
-    b = photo(p["scene"], ph, 0, p.get("pos", "center")) + fade(ph - 240, 242)
+    b = photo(p["scene"], ph, 0, p.get("pos", "center")) + band(ph)
     b += logo(56, 44)
     b += (f'<div style="position:absolute;right:64px;left:64px;top:{ph - 90}px">'
           f'<div class="h1" style="font-size:70px">{p["h1"]}</div>'
@@ -182,35 +191,28 @@ def post_stages(p, w=1080, h=1350):
 
 
 def ad(p, w=1080, h=1350):
-    """Ad 4:5: photo top ~62%, offer panel below."""
+    """Ad: photo on top, offer column below (flex, so lines never collide)."""
     vertical = h > 1500
-    ph = p.get("photo_h", 1080 if vertical else 820)
-    ptop = 0
-    b = photo(p["scene"], ph, ptop, p.get("pos", "center")) + fade(ph - 300, 302)
-    b += logo(56, 44 if not vertical else 120)
-    # headline overlay on photo bottom
-    y = ph - (230 if not vertical else 260)
-    b += (f'<div style="position:absolute;right:60px;left:60px;top:{y}px">'
-          + (f'<div class="kick solid" style="font-size:28px">{p["kick"]}</div>' if p.get("kick") else "")
-          + f'<div class="h1" style="font-size:{p.get("hs", 64)}px;margin-top:14px">{p["h1"]}</div></div>')
-    y2 = ph + (70 if not vertical else 110)
-    b += f'<div class="sub" style="position:absolute;right:60px;left:60px;top:{y2}px;font-size:{p.get("ss", 34)}px;color:#fff;font-weight:700">{p["sub"]}</div>'
-    # price + guarantee row
-    y3 = y2 + (p.get("sub_h", 110) if not vertical else p.get("sub_h", 130) + 30)
+    ph = p.get("photo_hv" if vertical else "photo_h", 1000 if vertical else 720)
+    b = photo(p["scene"], ph, 0, p.get("pos", "center")) + band(ph, 300)
+    b += logo(56, 150 if vertical else 44)
+    top = ph - (110 if vertical else 90)
     price = p["price"]
     old = p.get("old")
-    pr = (f'<div class="price"><span class="lat" style="font-size:52px">{price}</span><span style="font-size:30px">دینار</span></div>')
+    pr = f'<div class="price"><span class="lat" style="font-size:52px">{price}</span><span style="font-size:30px">دینار</span></div>'
     if old:
-        pr += f'<span class="strike lat" style="font-size:34px;margin-right:16px">{old}</span>'
-    b += (f'<div style="position:absolute;right:60px;left:60px;top:{y3}px;display:flex;align-items:center;justify-content:space-between">'
-          f'<div style="display:flex;align-items:center;gap:6px">{pr}</div>'
-          f'<div class="badge">{SHIELD}<span>گرنتی 7 وانە</span></div></div>')
-    if p.get("deadline"):
-        b += f'<div style="position:absolute;right:60px;left:60px;top:{y3 + 110}px;font-weight:800;font-size:28px" class="lime">{p["deadline"]}</div>'
-    cy = h - (150 if not vertical else 330)
+        pr += f'<span class="strike lat" style="font-size:34px;margin-right:18px">{old}</span>'
+    col = (f'<div style="position:absolute;right:60px;left:60px;top:{top}px;display:flex;flex-direction:column;align-items:flex-start;gap:{22 if vertical else 16}px">'
+           + (f'<div class="kick solid" style="font-size:28px">{p["kick"]}</div>' if p.get("kick") else "")
+           + f'<div class="h1" style="font-size:{p.get("hs", 64)}px">{p["h1"]}</div>'
+           + f'<div style="font-size:{p.get("ss", 33)}px;font-weight:700;line-height:1.5;color:#E3EEFB">{p["sub"]}</div>'
+           + f'<div style="align-self:stretch;display:flex;align-items:center;justify-content:space-between;margin-top:6px">'
+           + f'<div style="display:flex;align-items:center">{pr}</div><div class="badge">{SHIELD}<span>گرنتی 7 وانە</span></div></div>'
+           + (f'<div class="lime" style="font-weight:800;font-size:28px">{p["deadline"]}</div>' if p.get("deadline") else "")
+           + '</div>')
+    b += col
+    cy = h - (440 if vertical else 128)
     b += f'<div style="position:absolute;right:60px;left:60px;top:{cy}px;display:flex;justify-content:center">{cta(36)}</div>'
-    if vertical:
-        b += foot(h - 200)
     return page(w, h, b)
 
 
