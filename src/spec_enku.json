@@ -68,7 +68,7 @@
  },
  "E03_numbers": {
   "layout": "table",
-  "scene": "e03_count",
+  "scene": "k03_count",
   "kick": "Numbers",
   "h1": "Count to 5<br><span class='acc'>in Kurdish</span>",
   "hs": 60,
@@ -147,7 +147,7 @@
  },
  "E05_tourist": {
   "layout": "table",
-  "scene": "e05_citadel",
+  "scene": "k06_citadel",
   "kick": "Travelling to Erbil?",
   "h1": "4 Kurdish phrases<br><span class='acc'>for your trip</span>",
   "hs": 60,
@@ -184,7 +184,7 @@
  },
  "E06_food": {
   "layout": "table",
-  "scene": "e06_breakfast",
+  "scene": "k07_breakfast",
   "kick": "At the table",
   "h1": "Food words<br><span class='acc'>in Kurdish</span>",
   "hs": 60,
@@ -361,7 +361,7 @@
     1920
    ]
   ],
-  "scene": "ea03_desk",
+  "scene": "ka03_desk",
   "kick": "Coming soon",
   "h1": "The Leen course<br>for Kurdish (Sorani)",
   "hs": 66,
@@ -382,7 +382,7 @@
     1920
    ]
   ],
-  "scene": "e05_citadel",
+  "scene": "k06_citadel",
   "kick": "Visiting Erbil?",
   "h1": "A new Kurdish phrase<br>every day",
   "hs": 64,
@@ -468,7 +468,7 @@
     1920
    ]
   ],
-  "scene": "ea08_gift",
+  "scene": "ka06_gift",
   "kick": "A gift with meaning",
   "h1": "Give your Kurdish colleague<br>a new language",
   "hs": 58,
