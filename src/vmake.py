@@ -43,29 +43,52 @@ def doc(body, bg="transparent"):
 
 def hook_html(text):
     return doc(f'''<div style="position:absolute;left:70px;right:70px;top:250px;display:flex;justify-content:center">
-<div style="background:rgba(9,32,84,.88);border:3px solid rgba(95,211,255,.65);border-radius:34px;padding:22px 38px 30px;
+<div dir="auto" style="background:rgba(9,32,84,.88);border:3px solid rgba(95,211,255,.65);border-radius:34px;padding:22px 38px 30px;
 font-weight:900;font-size:58px;line-height:1.35;text-align:center;box-shadow:0 14px 40px rgba(0,0,0,.35)">{text}</div></div>''')
 
 
 def sub_html(ar, ku):
     return doc(f'''<div style="position:absolute;left:70px;right:70px;top:1150px;display:flex;flex-direction:column;align-items:center;gap:10px">
-<div style="background:rgba(255,255,255,.95);color:#0B2A6B;border-radius:26px;padding:12px 34px 20px;font-weight:900;font-size:60px;line-height:1.35;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,.30)">{ar}</div>
-<div style="background:rgba(9,32,84,.86);color:#FFD24A;border-radius:22px;padding:10px 28px 16px;font-weight:800;font-size:44px;line-height:1.4;text-align:center">{ku}</div>
+<div dir="rtl" style="background:rgba(255,255,255,.95);color:#0B2A6B;border-radius:26px;padding:12px 34px 20px;font-weight:900;font-size:60px;line-height:1.35;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,.30)">{ar}</div>
+<div dir="auto" style="background:rgba(9,32,84,.86);color:#FFD24A;border-radius:22px;padding:10px 28px 16px;font-weight:800;font-size:44px;line-height:1.4;text-align:center">{ku}</div>
 </div>''')
 
 
+META = {"theme": "blue", "sub": "لە کوردییەوە بۆ عەرەبیی عێراقی · 100 وانە", "cta": "داوای بکە لە واتسئاپ",
+        "phone": "0770 013 7670", "book": True, "unit": "دینار", "dir": "rtl"}
+BG = {"blue": "linear-gradient(160deg,#27A9E0 0%,#1673C0 30%,#0E3F8E 58%,#0B2A6B 78%,#2E3FA3 100%)",
+      "navy": "linear-gradient(160deg,#0D2E57 0%,#041730 55%,#0A1F3F 100%)",
+      "cream": "#F7F2E8"}
+
+
 def end_html(e):
-    price = e.get("price")
+    m = dict(META, **e)
+    dark = m["theme"] != "cream"
+    ink = "#fff" if dark else "#041730"
+    sub = "#DDEBFA" if dark else "#4F5B66"
+    logo = "logo_white.png" if dark else "logo.png"
+    price = m.get("price")
     pr = (f'<div style="display:inline-flex;align-items:baseline;gap:12px;background:#FFD24A;color:#0B2A6B;border-radius:24px;padding:12px 30px 18px;font-weight:900">'
-          f'<span class="lat" style="font-size:66px">{price}</span><span style="font-size:36px">دینار</span></div>') if price else ""
-    cta = ('<div style="display:inline-flex;align-items:center;gap:18px;background:#22C35E;border-radius:99px;padding:18px 38px 24px;font-weight:900;font-size:44px">'
-           '<span>داوای بکە لە واتسئاپ</span><span class="lat">0770 013 7670</span></div>') if e.get("cta", True) else ""
-    return doc(f'''<div style="position:absolute;inset:0;background:linear-gradient(160deg,#27A9E0 0%,#1673C0 30%,#0E3F8E 58%,#0B2A6B 78%,#2E3FA3 100%)"></div>
-<img src="{B}/logo_white.png" style="position:absolute;left:50%;transform:translateX(-50%);top:210px;height:86px">
-<div style="position:absolute;left:70px;right:70px;top:350px;text-align:center;font-weight:900;font-size:64px;line-height:1.35">{e["title"]}</div>
-<img src="{B}/book3d.png" style="position:absolute;left:50%;transform:translateX(-50%);top:{e.get("book_top", 600)}px;height:760px">
-<div style="position:absolute;left:70px;right:70px;top:1390px;display:flex;flex-direction:column;align-items:center;gap:22px">
-<div style="font-weight:800;font-size:40px;color:#DDEBFA;text-align:center">{e.get("sub", "لە کوردییەوە بۆ عەرەبیی عێراقی · 100 وانە")}</div>
+          f'<span class="lat" style="font-size:66px">{price}</span><span style="font-size:36px">{m["unit"]}</span></div>') if price else ""
+    ctabg = "#22C35E" if m.get("phone") else "#1E8FB8"
+    cta = (f'<div style="display:inline-flex;align-items:center;gap:18px;background:{ctabg};color:#fff;border-radius:99px;padding:18px 38px 24px;font-weight:900;font-size:44px">'
+           f'<span>{m["cta"]}</span>' + (f'<span class="lat">{m["phone"]}</span>' if m.get("phone") else "") + '</div>') if m.get("cta") else ""
+    if m.get("book", True):
+        mid = f'<img src="{B}/book3d.png" style="position:absolute;left:50%;transform:translateX(-50%);top:{m.get("book_top", 600)}px;height:760px">'
+    else:
+        ph = m.get("phrase", ["", "", ""])
+        mid = (f'<div style="position:absolute;left:110px;right:110px;top:640px;height:600px;background:#fff;border-radius:60px;'
+               f'box-shadow:0 30px 80px rgba(0,0,0,.25);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;color:#041730">'
+               f'<div style="font-weight:900;font-size:110px;direction:rtl">{ph[0]}</div>'
+               f'<div class="lat" style="font-weight:800;font-size:52px;color:#1E8FB8">{ph[1]}</div>'
+               f'<div style="font-weight:800;font-size:50px;color:#4F5B66">{ph[2]}</div></div>'
+               f'<svg style="position:absolute;left:260px;top:1228px" width="90" height="80" viewBox="0 0 90 80"><path d="M0 0 C20 30 22 55 8 80 C45 62 70 35 90 0 Z" fill="#fff"/></svg>')
+    return doc(f'''<div style="position:absolute;inset:0;background:{BG[m["theme"]]}"></div>
+<img src="{B}/{logo}" style="position:absolute;left:50%;transform:translateX(-50%);top:210px;height:86px">
+<div style="position:absolute;left:70px;right:70px;top:350px;text-align:center;font-weight:900;font-size:64px;line-height:1.35;color:{ink};direction:{m["dir"]}">{m["title"]}</div>
+{mid}
+<div style="position:absolute;left:70px;right:70px;top:1390px;display:flex;flex-direction:column;align-items:center;gap:22px;direction:{m["dir"]}">
+<div style="font-weight:800;font-size:40px;color:{sub};text-align:center">{m["sub"]}</div>
 {pr}{cta}</div>''', bg="#0B2A6B")
 
 
@@ -79,7 +102,7 @@ def run(cmd):
 def speech_segments(src):
     from faster_whisper import WhisperModel
     m = WhisperModel("small", device="cpu", compute_type="int8")
-    segs, _ = m.transcribe(src, language="ar", vad_filter=True)
+    segs, _ = m.transcribe(src, language=META.get("asr", "ar"), vad_filter=True)
     return [(s.start, s.end, s.text.strip()) for s in segs]
 
 
@@ -157,7 +180,8 @@ def build(vid, v):
 
 
 if __name__ == "__main__":
-    specs = json.load(open(f"{ROOT}/vspec.json"))
+    specs = json.load(open(os.environ.get("VSPEC", f"{ROOT}/vspec.json")))
+    META.update(specs.pop("_meta", {}))
     want = sys.argv[1:] or ["all"]
     for vid, v in specs.items():
         if "all" in want or vid in want:
