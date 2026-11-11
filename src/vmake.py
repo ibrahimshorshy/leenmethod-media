@@ -137,7 +137,7 @@ def build(vid, v):
     # extend each subtitle until the next one starts (min 1.3 s on screen)
     for i in range(len(times)):
         nxt = times[i + 1][0] if i + 1 < len(times) else dur
-        times[i][1] = max(times[i][1], min(nxt, times[i][0] + 1.3))
+        times[i][1] = min(max(times[i][1], min(nxt, times[i][0] + 1.3)), nxt - 0.02)
     jobs = []
     open(f"{work}/hook.html", "w").write(hook_html(v["hook"])); jobs.append([f"{work}/hook.html", f"{work}/hook.png", 1])
     for i, ln in enumerate(lines):
