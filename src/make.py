@@ -250,7 +250,7 @@ def ad(p, w=1080, h=1350):
     if pr or badge_html:
         b += f'<div style="position:absolute;right:60px;left:60px;top:{cy}px;display:flex;justify-content:center">{cta(p.get("cta_size", 36), p.get("cta"), p.get("phone"), p.get("icon", "phone"))}</div>'
     if vertical:
-        b += foot(h - 300)
+        b += foot(h - (84 if noprice else 300))
     return page(w, h, b)
 
 
