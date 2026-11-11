@@ -242,7 +242,7 @@
  },
  "E08_kind_words": {
   "layout": "table",
-  "scene": "e08_host",
+  "scene": "k09_host",
   "kick": "Kind words",
   "h1": "Words that open doors<br><span class='acc'>in Kurdish</span>",
   "hs": 56,
@@ -279,7 +279,7 @@
  },
  "E09_facts": {
   "layout": "list",
-  "scene": "e09_writing",
+  "scene": "k05_student",
   "kick": "Did you know?",
   "h1": "Kurdish is easier<br><span class='acc'>than it looks</span>",
   "hs": 58,
@@ -299,7 +299,7 @@
  },
  "E10_two_people": {
   "layout": "full",
-  "scene": "e10_portrait",
+  "scene": "k10_portrait",
   "where": "bottom",
   "y": 920,
   "h1": "You are two people<br><span class='acc'>when you know two languages</span>",
@@ -405,7 +405,7 @@
     1920
    ]
   ],
-  "scene": "e09_writing",
+  "scene": "k05_student",
   "kick": "Kurdish isn't that hard",
   "h1": "Every vowel is written.<br>You read it as it sounds.",
   "hs": 58,
@@ -427,7 +427,7 @@
     1920
    ]
   ],
-  "scene": "ea06_team",
+  "scene": "ka07_office",
   "kick": "For NGOs and companies",
   "h1": "Iraqi Arabic training<br>for your Kurdish team",
   "hs": 60,
@@ -448,7 +448,7 @@
     1920
    ]
   ],
-  "scene": "ea07_meeting",
+  "scene": "p05_office",
   "kick": "Mixed teams work better",
   "h1": "When your team<br>shares a language",
   "hs": 64,
@@ -488,7 +488,7 @@
     1920
    ]
   ],
-  "scene": "ea06_team",
+  "scene": "p06_people",
   "kick": "Training on a budget",
   "h1": "290 IQD per lesson,<br>per employee",
   "hs": 62,
@@ -507,7 +507,7 @@
     1920
    ]
   ],
-  "scene": "ea07_meeting",
+  "scene": "a05_interview",
   "kick": "Risk-free",
   "h1": "Try 7 lessons.<br>Not helpful? Get your money back.",
   "hs": 56,

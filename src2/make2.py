@@ -28,7 +28,7 @@ body{{font-family:D,sans-serif;color:#fff;direction:rtl}}
 .fade{{position:absolute;left:0;width:100%}}
 .logochip{{position:absolute;background:rgba(4,23,48,.74);border-radius:26px;padding:13px 24px 13px;display:flex;
   backdrop-filter:blur(10px);border:1.5px solid rgba(255,255,255,.12)}}
-.logochip img{{height:46px;display:block}}
+.logochip img{{height:56px;display:block}}
 .kick{{display:inline-block;background:rgba(51,175,213,.14);border:2px solid rgba(51,175,213,.55);color:#8ADBF2;
   border-radius:99px;padding:6px 26px 10px;font-weight:700;font-size:30px;line-height:1.4}}
 .kick.solid{{background:rgba(51,175,213,.14);color:#8ADBF2;border:2px solid rgba(51,175,213,.55)}}
@@ -76,8 +76,8 @@ META = {"foot": "لە کوردییەوە بۆ عەرەبیی عێراقی", "cta
 def page(w, h, body):
     deco = (f'<div class="glow" style="left:-300px;top:-260px;width:1000px;height:1000px;background:radial-gradient(circle,rgba(51,175,213,.20),rgba(51,175,213,0) 65%)"></div>'
             f'<div class="glow" style="right:-360px;bottom:-320px;width:1100px;height:1100px;background:radial-gradient(circle,rgba(139,185,66,.16),rgba(139,185,66,0) 65%)"></div>'
-            f'<div class="ring" style="right:-190px;bottom:{int(h*.16)}px;width:520px;height:520px"></div>'
-            f'<div class="ring" style="left:-130px;bottom:-110px;width:340px;height:340px;opacity:.16"></div>')
+            f'<div class="ring" style="right:-250px;bottom:-170px;width:560px;height:560px;opacity:.22"></div>'
+            f'<div class="ring" style="left:-150px;bottom:{int(h*.30)}px;width:300px;height:300px;opacity:.12"></div>')
     html_s = (f'<!doctype html><html lang="{TH["lang"]}"><head><meta charset="utf-8"><style>:root{{--w:{w}px;--h:{h}px}}{CSS}{TH["css"]}</style></head>'
               f'<body><div class="stage">{deco}{body}</div></body></html>')
     for a_, b_ in COLOR_MAP.items():
