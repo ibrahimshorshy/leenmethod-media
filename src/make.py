@@ -103,9 +103,18 @@ def fade(top, h, d="to bottom", a="rgba(11,42,107,0)", b="rgba(11,42,107,1)"):
     return f'<div class="fade" style="top:{top}px;height:{h}px;background:linear-gradient({d},{a},{b})"></div>'
 
 
-def cta(size=38):
-    return (f'<div class="cta" style="font-size:{size}px"><span class="ic">{PHONE_SVG}</span>'
-            f'<span>{META["cta"]} <span class="lat" style="font-weight:800">{META["phone"]}</span></span></div>')
+PLANE_SVG = ('<svg width="34" height="34" viewBox="0 0 24 24"><path fill="#229ED9" d="M21.5 3.5L2.8 10.7c-1 .4-1 1.8.1 2.1l4.6 1.4 1.8 5.6c.3.9 1.4 1.1 2 .4l2.6-2.6 4.7 3.5c.8.6 1.9.1 2.1-.9l3-15.2c.2-1.1-.9-2-1.9-1.5zM9.6 14.6l8.6-7.8-6.9 9z"/></svg>')
+FOLLOW_SVG = ('<svg width="34" height="34" viewBox="0 0 24 24"><path fill="#1E8FB8" d="M12 12a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9zm0 2c-4.4 0-8 2.2-8 5v2h16v-2c0-2.8-3.6-5-8-5z"/></svg>')
+
+
+def cta(size=38, text=None, phone=None, icon="phone"):
+    text = META["cta"] if text is None else text
+    phone = META["phone"] if phone is None else phone
+    ic = {"phone": PHONE_SVG, "tg": PLANE_SVG, "follow": FOLLOW_SVG}[icon]
+    bg = {"phone": "#22C35E", "tg": "#229ED9", "follow": "#1E8FB8"}[icon]
+    ph = f' <span class="lat" style="font-weight:800">{phone}</span>' if phone else ""
+    return (f'<div class="cta" style="font-size:{size}px;background:{bg}"><span class="ic">{ic}</span>'
+            f'<span>{text}{ph}</span></div>')
 
 
 def foot(y, txt=None):
@@ -232,7 +241,7 @@ def ad(p, w=1080, h=1350):
            + '</div>')
     b += col
     cy = h - (440 if vertical else 128)
-    b += f'<div style="position:absolute;right:60px;left:60px;top:{cy}px;display:flex;justify-content:center">{cta(36)}</div>'
+    b += f'<div style="position:absolute;right:60px;left:60px;top:{cy}px;display:flex;justify-content:center">{cta(p.get("cta_size", 36), p.get("cta"), p.get("phone"), p.get("icon", "phone"))}</div>'
     if vertical:
         b += foot(h - 300)
     return page(w, h, b)
