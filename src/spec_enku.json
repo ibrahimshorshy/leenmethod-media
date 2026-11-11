@@ -1,0 +1,516 @@
+{
+ "_meta": {
+  "theme": "cream",
+  "foot": "Learn Kurdish (Sorani) · Leen",
+  "cta": "Order on WhatsApp",
+  "badge": "7-lesson guarantee",
+  "unit": "IQD",
+  "phone": "+964 770 013 7670"
+ },
+ "E01_greetings": {
+  "layout": "table",
+  "scene": "e01_greeting",
+  "kick": "Your first Kurdish words",
+  "h1": "Say hello<br><span class='acc'>in Kurdish (Sorani)</span>",
+  "hs": 58,
+  "cols": [
+   "Kurdish",
+   "Say it",
+   "Meaning"
+  ],
+  "rh": 80,
+  "card_top": 700,
+  "rows": [
+   [
+    "<span class=\"ar\" style=\"font-size:42px;direction:rtl\">سڵاو</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1E8FB8\">slaw</span>",
+    "<span style=\"font-size:30px;font-weight:700;color:#041730;font-family:P,V,sans-serif\">Hello</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:42px;direction:rtl\">چۆنیت؟</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1E8FB8\">chonit?</span>",
+    "<span style=\"font-size:30px;font-weight:700;color:#041730;font-family:P,V,sans-serif\">How are you?</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:38px;direction:rtl\">باشم، سوپاس</span>",
+    "<span class=\"lat\" style=\"font-size:28px;font-weight:700;color:#1E8FB8\">bashim, supas</span>",
+    "<span style=\"font-size:30px;font-weight:700;color:#041730;font-family:P,V,sans-serif\">I'm good, thanks</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:40px;direction:rtl\">بەخێربێیت</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1E8FB8\">bexêrbêyt</span>",
+    "<span style=\"font-size:30px;font-weight:700;color:#041730;font-family:P,V,sans-serif\">Welcome</span>"
+   ]
+  ],
+  "note": "Save this and try it on the next Kurdish person you meet."
+ },
+ "E02_new_sounds": {
+  "layout": "list",
+  "scene": "e02_listen",
+  "kick": "Pronunciation",
+  "h1": "7 Kurdish sounds<br><span class='acc'>English doesn't have</span>",
+  "hs": 58,
+  "photo_h": 470,
+  "list_top": 640,
+  "fs": 31,
+  "gap": 12,
+  "items": [
+   "ح <b>ḥ</b>: a breathy h from deep in the throat",
+   "خ <b>kh</b>: like ch in Scottish “loch”",
+   "ع <b>ʕ</b>: a squeeze in the throat",
+   "غ <b>gh</b>: like a French r",
+   "ق <b>q</b>: a k from the back of the throat",
+   "ڕ <b>rr</b>: a rolled r, like Spanish “perro”",
+   "ڵ <b>ł</b>: a heavy l, like the ll in “full”"
+  ],
+  "note": "Take them slowly. Listen first, then repeat out loud.",
+  "note_y": 1180
+ },
+ "E03_numbers": {
+  "layout": "table",
+  "scene": "e03_count",
+  "kick": "Numbers",
+  "h1": "Count to 5<br><span class='acc'>in Kurdish</span>",
+  "hs": 60,
+  "cols": [
+   "Number",
+   "Kurdish",
+   "Say it"
+  ],
+  "rh": 74,
+  "card_top": 690,
+  "rows": [
+   [
+    "<span class=\"lat\" style=\"font-size:40px;font-weight:700;color:#1E8FB8\">1</span>",
+    "<span class=\"ar\" style=\"font-size:42px;direction:rtl\">یەک</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1E8FB8\">yek</span>"
+   ],
+   [
+    "<span class=\"lat\" style=\"font-size:40px;font-weight:700;color:#1E8FB8\">2</span>",
+    "<span class=\"ar\" style=\"font-size:42px;direction:rtl\">دوو</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1E8FB8\">dû</span>"
+   ],
+   [
+    "<span class=\"lat\" style=\"font-size:40px;font-weight:700;color:#1E8FB8\">3</span>",
+    "<span class=\"ar\" style=\"font-size:42px;direction:rtl\">سێ</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1E8FB8\">sê</span>"
+   ],
+   [
+    "<span class=\"lat\" style=\"font-size:40px;font-weight:700;color:#1E8FB8\">4</span>",
+    "<span class=\"ar\" style=\"font-size:42px;direction:rtl\">چوار</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1E8FB8\">chwar</span>"
+   ],
+   [
+    "<span class=\"lat\" style=\"font-size:40px;font-weight:700;color:#1E8FB8\">5</span>",
+    "<span class=\"ar\" style=\"font-size:42px;direction:rtl\">پێنج</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1E8FB8\">pênj</span>"
+   ]
+  ],
+  "note": "Try it: how old are you in Kurdish? Tell us below."
+ },
+ "E04_market": {
+  "layout": "table",
+  "scene": "e04_bazaar",
+  "kick": "At the bazaar",
+  "h1": "Shop in Kurdish<br><span class='acc'>from day one</span>",
+  "hs": 60,
+  "cols": [
+   "Kurdish",
+   "Say it",
+   "Meaning"
+  ],
+  "rh": 84,
+  "card_top": 700,
+  "rows": [
+   [
+    "<span class=\"ar\" style=\"font-size:38px;direction:rtl\">ئەمە بە چەندە؟</span>",
+    "<span class=\"lat\" style=\"font-size:26px;font-weight:700;color:#1E8FB8\">eme be chende?</span>",
+    "<span style=\"font-size:30px;font-weight:700;color:#041730;font-family:P,V,sans-serif\">How much is this?</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:40px;direction:rtl\">زۆر گرانە</span>",
+    "<span class=\"lat\" style=\"font-size:28px;font-weight:700;color:#1E8FB8\">zor girane</span>",
+    "<span style=\"font-size:30px;font-weight:700;color:#041730;font-family:P,V,sans-serif\">It's too expensive</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:42px;direction:rtl\">باشە</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1E8FB8\">bashe</span>",
+    "<span style=\"font-size:30px;font-weight:700;color:#041730;font-family:P,V,sans-serif\">OK</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:42px;direction:rtl\">سوپاس</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1E8FB8\">supas</span>",
+    "<span style=\"font-size:30px;font-weight:700;color:#041730;font-family:P,V,sans-serif\">Thank you</span>"
+   ]
+  ],
+  "note": "“Be chende?” is the most useful question in any Kurdish bazaar."
+ },
+ "E05_tourist": {
+  "layout": "table",
+  "scene": "e05_citadel",
+  "kick": "Travelling to Erbil?",
+  "h1": "4 Kurdish phrases<br><span class='acc'>for your trip</span>",
+  "hs": 60,
+  "cols": [
+   "Kurdish",
+   "Say it",
+   "Meaning"
+  ],
+  "rh": 84,
+  "card_top": 700,
+  "rows": [
+   [
+    "<span class=\"ar\" style=\"font-size:38px;direction:rtl\">قەڵا لە کوێیە؟</span>",
+    "<span class=\"lat\" style=\"font-size:26px;font-weight:700;color:#1E8FB8\">qela le kwêye?</span>",
+    "<span style=\"font-size:30px;font-weight:700;color:#041730;font-family:P,V,sans-serif\">Where is the citadel?</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:42px;direction:rtl\">تکایە</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1E8FB8\">tikaye</span>",
+    "<span style=\"font-size:30px;font-weight:700;color:#041730;font-family:P,V,sans-serif\">Please</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:42px;direction:rtl\">ببورە</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1E8FB8\">bibure</span>",
+    "<span style=\"font-size:30px;font-weight:700;color:#041730;font-family:P,V,sans-serif\">Sorry / excuse me</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:42px;direction:rtl\">ماڵئاوا</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1E8FB8\">maława</span>",
+    "<span style=\"font-size:30px;font-weight:700;color:#041730;font-family:P,V,sans-serif\">Goodbye</span>"
+   ]
+  ],
+  "note": "People here light up when you try a few words."
+ },
+ "E06_food": {
+  "layout": "table",
+  "scene": "e06_breakfast",
+  "kick": "At the table",
+  "h1": "Food words<br><span class='acc'>in Kurdish</span>",
+  "hs": 60,
+  "cols": [
+   "Kurdish",
+   "Say it",
+   "Meaning"
+  ],
+  "rh": 80,
+  "card_top": 700,
+  "rows": [
+   [
+    "<span class=\"ar\" style=\"font-size:42px;direction:rtl\">نان</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1E8FB8\">nan</span>",
+    "<span style=\"font-size:30px;font-weight:700;color:#041730;font-family:P,V,sans-serif\">Bread</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:42px;direction:rtl\">ئاو</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1E8FB8\">aw</span>",
+    "<span style=\"font-size:30px;font-weight:700;color:#041730;font-family:P,V,sans-serif\">Water</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:42px;direction:rtl\">چا</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1E8FB8\">cha</span>",
+    "<span style=\"font-size:30px;font-weight:700;color:#041730;font-family:P,V,sans-serif\">Tea</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:40px;direction:rtl\">نۆشی گیان!</span>",
+    "<span class=\"lat\" style=\"font-size:28px;font-weight:700;color:#1E8FB8\">noshî gyan!</span>",
+    "<span style=\"font-size:30px;font-weight:700;color:#041730;font-family:P,V,sans-serif\">Enjoy your meal!</span>"
+   ]
+  ],
+  "note": "Say “noshî gyan” to someone eating with you. Watch them smile."
+ },
+ "E07_why": {
+  "layout": "list",
+  "scene": "e07_ngo",
+  "kick": "Why Kurdish?",
+  "h1": "5 reasons to learn<br><span class='acc'>Kurdish (Sorani)</span>",
+  "hs": 58,
+  "photo_h": 540,
+  "list_top": 740,
+  "fs": 33,
+  "gap": 20,
+  "items": [
+   "Work and live in Kurdistan with ease",
+   "Get closer to Kurdish friends, family and colleagues",
+   "Travel and talk to people directly",
+   "Understand Kurdish music and films",
+   "People love it when you speak their language"
+  ],
+  "note": "Which one is yours?",
+  "note_y": 1186
+ },
+ "E08_kind_words": {
+  "layout": "table",
+  "scene": "e08_host",
+  "kick": "Kind words",
+  "h1": "Words that open doors<br><span class='acc'>in Kurdish</span>",
+  "hs": 56,
+  "cols": [
+   "Kurdish",
+   "Say it",
+   "Meaning"
+  ],
+  "rh": 84,
+  "card_top": 700,
+  "rows": [
+   [
+    "<span class=\"ar\" style=\"font-size:42px;direction:rtl\">سەرچاو</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1E8FB8\">serchaw</span>",
+    "<span style=\"font-size:30px;font-weight:700;color:#041730;font-family:P,V,sans-serif\">With pleasure</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:36px;direction:rtl\">دەستت خۆش بێت</span>",
+    "<span class=\"lat\" style=\"font-size:26px;font-weight:700;color:#1E8FB8\">destit xosh bêt</span>",
+    "<span style=\"font-size:30px;font-weight:700;color:#041730;font-family:P,V,sans-serif\">Thanks for your effort</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:40px;direction:rtl\">زۆر سوپاس</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1E8FB8\">zor supas</span>",
+    "<span style=\"font-size:30px;font-weight:700;color:#041730;font-family:P,V,sans-serif\">Thank you very much</span>"
+   ],
+   [
+    "<span class=\"ar\" style=\"font-size:42px;direction:rtl\">گیان</span>",
+    "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1E8FB8\">gyan</span>",
+    "<span style=\"font-size:30px;font-weight:700;color:#041730;font-family:P,V,sans-serif\">Dear</span>"
+   ]
+  ],
+  "note": "Which one will you use today?"
+ },
+ "E09_facts": {
+  "layout": "list",
+  "scene": "e09_writing",
+  "kick": "Did you know?",
+  "h1": "Kurdish is easier<br><span class='acc'>than it looks</span>",
+  "hs": 58,
+  "photo_h": 520,
+  "list_top": 720,
+  "fs": 33,
+  "gap": 20,
+  "items": [
+   "Sorani is written right to left",
+   "Almost every vowel is written, so you read it as it sounds",
+   "Many letters sound just like English: b, p, t, d, s, sh, k, g",
+   "Short real dialogues get you speaking fast",
+   "20 minutes a day is enough to start"
+  ],
+  "note": "Follow for one Kurdish phrase a day.",
+  "note_y": 1186
+ },
+ "E10_two_people": {
+  "layout": "full",
+  "scene": "e10_portrait",
+  "where": "bottom",
+  "y": 920,
+  "h1": "You are two people<br><span class='acc'>when you know two languages</span>",
+  "hs": 66,
+  "sub": "One of you laughs in English, the other in Kurdish.",
+  "ss": 34
+ },
+ "EA01_learn": {
+  "layout": "ad",
+  "sizes": [
+   [
+    1080,
+    1350
+   ],
+   [
+    1080,
+    1920
+   ]
+  ],
+  "scene": "e01_greeting",
+  "kick": "Kurdish through conversation",
+  "h1": "Learn Kurdish,<br>one small step a day",
+  "hs": 66,
+  "sub": "Listen, repeat out loud, speak. Short real-life dialogues with native audio.",
+  "cta": "Follow for a phrase a day",
+  "phone": "",
+  "icon": "follow",
+  "badge": ""
+ },
+ "EA02_expat": {
+  "layout": "ad",
+  "sizes": [
+   [
+    1080,
+    1350
+   ],
+   [
+    1080,
+    1920
+   ]
+  ],
+  "scene": "e07_ngo",
+  "kick": "Living in Kurdistan?",
+  "h1": "Talk to your colleagues<br>in their language",
+  "hs": 62,
+  "sub": "Kurdish (Sorani) for expats, NGO staff and newcomers. Our Kurdish course is coming soon.",
+  "cta": "Join the waitlist on WhatsApp",
+  "badge": "",
+  "cta_size": 32
+ },
+ "EA03_book_soon": {
+  "layout": "ad",
+  "sizes": [
+   [
+    1080,
+    1350
+   ],
+   [
+    1080,
+    1920
+   ]
+  ],
+  "scene": "ea03_desk",
+  "kick": "Coming soon",
+  "h1": "The Leen course<br>for Kurdish (Sorani)",
+  "hs": 66,
+  "sub": "100 dialogue lessons with native Kurdish audio. Join the waitlist to hear first.",
+  "cta": "Join the waitlist on WhatsApp",
+  "badge": "",
+  "cta_size": 32
+ },
+ "EA04_traveller": {
+  "layout": "ad",
+  "sizes": [
+   [
+    1080,
+    1350
+   ],
+   [
+    1080,
+    1920
+   ]
+  ],
+  "scene": "e05_citadel",
+  "kick": "Visiting Erbil?",
+  "h1": "A new Kurdish phrase<br>every day",
+  "hs": 64,
+  "sub": "Greetings, the bazaar, the restaurant, the taxi: what you need for your trip.",
+  "cta": "Follow for a phrase a day",
+  "phone": "",
+  "icon": "follow",
+  "badge": ""
+ },
+ "EA05_not_hard": {
+  "layout": "ad",
+  "sizes": [
+   [
+    1080,
+    1350
+   ],
+   [
+    1080,
+    1920
+   ]
+  ],
+  "scene": "e09_writing",
+  "kick": "Kurdish isn't that hard",
+  "h1": "Every vowel is written.<br>You read it as it sounds.",
+  "hs": 58,
+  "sub": "Start with five words today. Follow us for one phrase a day.",
+  "cta": "Follow for a phrase a day",
+  "phone": "",
+  "icon": "follow",
+  "badge": ""
+ },
+ "EA06_team_arabic": {
+  "layout": "ad",
+  "sizes": [
+   [
+    1080,
+    1350
+   ],
+   [
+    1080,
+    1920
+   ]
+  ],
+  "scene": "ea06_team",
+  "kick": "For NGOs and companies",
+  "h1": "Iraqi Arabic training<br>for your Kurdish team",
+  "hs": 60,
+  "sub": "Leen Book 1: 100 lessons from Kurdish to Iraqi Arabic, with native audio. Ask about team orders.",
+  "price": "24,000",
+  "old": "29,000",
+  "deadline": "Special price until 30 November"
+ },
+ "EA07_onboarding": {
+  "layout": "ad",
+  "sizes": [
+   [
+    1080,
+    1350
+   ],
+   [
+    1080,
+    1920
+   ]
+  ],
+  "scene": "ea07_meeting",
+  "kick": "Mixed teams work better",
+  "h1": "When your team<br>shares a language",
+  "hs": 64,
+  "sub": "Help Kurdish staff work confidently with Arabic-speaking partners and clients.",
+  "price": "24,000",
+  "old": "29,000",
+  "deadline": "Special price until 30 November"
+ },
+ "EA08_gift": {
+  "layout": "ad",
+  "sizes": [
+   [
+    1080,
+    1350
+   ],
+   [
+    1080,
+    1920
+   ]
+  ],
+  "scene": "ea08_gift",
+  "kick": "A gift with meaning",
+  "h1": "Give your Kurdish colleague<br>a new language",
+  "hs": 58,
+  "sub": "Leen Book 1: from Kurdish to Iraqi Arabic, 100 lessons with native audio.",
+  "price": "29,000"
+ },
+ "EA09_per_lesson": {
+  "layout": "ad",
+  "sizes": [
+   [
+    1080,
+    1350
+   ],
+   [
+    1080,
+    1920
+   ]
+  ],
+  "scene": "ea06_team",
+  "kick": "Training on a budget",
+  "h1": "290 IQD per lesson,<br>per employee",
+  "hs": 62,
+  "sub": "A 100-lesson course in one book, with audio for every lesson. Ask about team orders.",
+  "price": "29,000"
+ },
+ "EA10_guarantee": {
+  "layout": "ad",
+  "sizes": [
+   [
+    1080,
+    1350
+   ],
+   [
+    1080,
+    1920
+   ]
+  ],
+  "scene": "ea07_meeting",
+  "kick": "Risk-free",
+  "h1": "Try 7 lessons.<br>Not helpful? Get your money back.",
+  "hs": 56,
+  "sub": "Leen Book 1 for Kurdish speakers learning Iraqi Arabic.",
+  "price": "29,000"
+ }
+}
