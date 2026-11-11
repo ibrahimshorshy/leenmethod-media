@@ -148,7 +148,7 @@ def build(vid, v):
     json.dump(jobs, open(f"{work}/jobs.json", "w"))
     open(f"{ROOT}/vshot.js", "w").write(SHOT)
     run(f"cd {ROOT} && NODE_PATH=/usr/local/lib/node_modules node vshot.js {work}/jobs.json")
-    hook_end = v.get("hook_end", min(3.0, times[0][0] + 1.2) if times else 3.0)
+    hook_end = v.get("hook_end", min(6.0, max(2.6, times[0][0] - 0.15)) if times else 3.0)
     inputs = f"-i {src} -loop 1 -t {dur} -i {work}/hook.png " + " ".join(f"-loop 1 -t {dur} -i {work}/s{i}.png" for i in range(len(lines)))
     extra = v.get("texts", [])
     inputs += " " + " ".join(f"-loop 1 -t {dur} -i {work}/t{k}.png" for k in range(len(extra)))
