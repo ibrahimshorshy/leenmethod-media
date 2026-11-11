@@ -78,8 +78,8 @@
    "Kurdish",
    "Say it"
   ],
-  "rh": 74,
-  "card_top": 690,
+  "rh": 72,
+  "card_top": 600,
   "rows": [
    [
     "<span class=\"lat\" style=\"font-size:40px;font-weight:700;color:#1E8FB8\">1</span>",
@@ -107,7 +107,8 @@
     "<span class=\"lat\" style=\"font-size:30px;font-weight:700;color:#1E8FB8\">pênj</span>"
    ]
   ],
-  "note": "Try it: how old are you in Kurdish? Tell us below."
+  "note": "Try it: how old are you in Kurdish? Tell us below.",
+  "photo_h": 400
  },
  "E04_market": {
   "layout": "table",
@@ -238,7 +239,8 @@
    "People love it when you speak their language"
   ],
   "note": "Which one is yours?",
-  "note_y": 1186
+  "note_y": 1186,
+  "pos": "center 4%"
  },
  "E08_kind_words": {
   "layout": "table",
