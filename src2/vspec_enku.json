@@ -1,0 +1,231 @@
+{
+ "_meta": {
+  "theme": "cream",
+  "sub": "Leen · Kurdish (Sorani) through conversation",
+  "cta": "Follow for a phrase a day",
+  "phone": "",
+  "book": false,
+  "dir": "ltr",
+  "asr": "fa"
+ },
+ "EV01_cafe": {
+  "src": "ev01_cafe",
+  "hook": "Order tea in Kurdish",
+  "lines": [
+   [
+    "چایەک، تکایە.",
+    "A tea, please."
+   ],
+   [
+    "سەرچاو!",
+    "With pleasure!"
+   ]
+  ],
+  "end": {
+   "title": "Say it in Kurdish",
+   "phrase": [
+    "چایەک، تکایە",
+    "chayek, tikaye",
+    "A tea, please"
+   ]
+  }
+ },
+ "EV02_colleague": {
+  "src": "ev02_colleague",
+  "hook": "Greet your Kurdish colleague",
+  "lines": [
+   [
+    "سڵاو! چۆنیت؟",
+    "Hi! How are you?"
+   ],
+   [
+    "باشم، سوپاس! تۆ چۆنیت؟",
+    "I'm good, thanks! And you?"
+   ]
+  ],
+  "end": {
+   "title": "Your first Kurdish words",
+   "phrase": [
+    "سڵاو، چۆنیت؟",
+    "slaw, chonit?",
+    "Hi, how are you?"
+   ]
+  }
+ },
+ "EV03_bazaar": {
+  "src": "ev03_bazaar",
+  "hook": "Shopping at the bazaar",
+  "lines": [
+   [
+    "ئەمە بە چەندە؟",
+    "How much is this?"
+   ],
+   [
+    "پێنج هەزار.",
+    "Five thousand."
+   ],
+   [
+    "سوپاس!",
+    "Thank you!"
+   ]
+  ],
+  "end": {
+   "title": "The bazaar question",
+   "phrase": [
+    "بە چەندە؟",
+    "be chende?",
+    "How much?"
+   ]
+  }
+ },
+ "EV04_taxi": {
+  "src": "ev04_taxi",
+  "hook": "Taking a taxi in Erbil",
+  "lines": [
+   [
+    "بۆ قەڵا، تکایە.",
+    "To the citadel, please."
+   ],
+   [
+    "سەرچاو!",
+    "With pleasure!"
+   ]
+  ],
+  "end": {
+   "title": "Locals love this word",
+   "phrase": [
+    "سەرچاو",
+    "serchaw",
+    "With pleasure"
+   ]
+  }
+ },
+ "EV05_neighbour": {
+  "src": "ev05_neighbour",
+  "hook": "Good morning in Kurdish",
+  "lines": [
+   [
+    "بەیانی باش!",
+    "Good morning!"
+   ],
+   [
+    "بەیانی باش، چۆنی؟",
+    "Good morning, how are you?"
+   ]
+  ],
+  "end": {
+   "title": "Start your day in Kurdish",
+   "phrase": [
+    "بەیانی باش",
+    "beyanî bash",
+    "Good morning"
+   ]
+  }
+ },
+ "EV06_dinner": {
+  "src": "ev06_dinner",
+  "hook": "Thank your Kurdish host",
+  "lines": [
+   [
+    "دەستت خۆش بێت!",
+    "Thanks for your effort!"
+   ],
+   [
+    "نۆشی گیان!",
+    "Enjoy your meal!"
+   ]
+  ],
+  "end": {
+   "title": "The host's favourite words",
+   "phrase": [
+    "دەستت خۆش بێت",
+    "destit xosh bêt",
+    "Thanks for your effort"
+   ]
+  }
+ },
+ "EV07_numbers": {
+  "src": "ev07_numbers",
+  "hook": "Count to five in Kurdish",
+  "lines": [
+   [
+    "یەک، دوو، سێ",
+    "One, two, three"
+   ],
+   [
+    "چوار، پێنج!",
+    "Four, five!"
+   ]
+  ],
+  "end": {
+   "title": "Numbers 1 to 5",
+   "phrase": [
+    "یەک · دوو · سێ · چوار · پێنج",
+    "yek · dû · sê · chwar · pênj",
+    "1 · 2 · 3 · 4 · 5"
+   ]
+  }
+ },
+ "EV08_classroom": {
+  "src": "ev08_classroom",
+  "hook": "When Kurdish kids greet their teacher",
+  "lines": [
+   [
+    "بەیانی باش، مامۆستا!",
+    "Good morning, teacher!"
+   ],
+   [
+    "بەیانی باش!",
+    "Good morning!"
+   ]
+  ],
+  "end": {
+   "title": "Teacher in Kurdish",
+   "phrase": [
+    "مامۆستا",
+    "mamosta",
+    "Teacher"
+   ]
+  }
+ },
+ "EV09_goodbye": {
+  "src": "ev09_goodbye",
+  "hook": "How to say goodbye",
+  "lines": [
+   [
+    "ماڵئاوا!",
+    "Goodbye!"
+   ],
+   [
+    "ماڵئاوا، گیان!",
+    "Goodbye, dear!"
+   ]
+  ],
+  "end": {
+   "title": "Say goodbye in Kurdish",
+   "phrase": [
+    "ماڵئاوا",
+    "maława",
+    "Goodbye"
+   ]
+  }
+ },
+ "EV10_two_people": {
+  "src": "ev10_two_people",
+  "hook": "You are two people when you know two languages",
+  "lines": [
+   [
+    "سڵاو گیان، چۆنی؟",
+    "Hi dear, how are you?"
+   ]
+  ],
+  "end": {
+   "title": "You are two people<br>when you know two languages",
+   "phrase": [
+    "سڵاو گیان",
+    "slaw gyan",
+    "Hi dear"
+   ]
+  }
+ }
+}
