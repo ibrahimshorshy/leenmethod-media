@@ -219,7 +219,8 @@ def post_stages(p, w=1080, h=1350):
 def ad(p, w=1080, h=1350):
     """Ad: photo on top, offer column below (flex, so lines never collide)."""
     vertical = h > 1500
-    ph = p.get("photo_hv" if vertical else "photo_h", 1000 if vertical else 720)
+    noprice = not p.get("price") and not p.get("badge", META["badge"])
+    ph = p.get("photo_hv" if vertical else "photo_h", (1240 if noprice else 1000) if vertical else (900 if noprice else 720))
     b = photo(p["scene"], ph, 0, p.get("pos", "center")) + band(ph, 300)
     b += logo(56, 150 if vertical else 44)
     top = ph - (110 if vertical else 90)
