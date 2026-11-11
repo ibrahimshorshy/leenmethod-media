@@ -62,8 +62,25 @@ SHIELD = ('<svg width="34" height="34" viewBox="0 0 24 24" style="flex:none"><pa
           '<path d="M8 12l3 3 5-6" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>')
 
 
+THEMES = {
+ "blue": dict(css="", fade="14,60,136", logo_foot="logo_white.png", lang="ckb"),
+ "navy": dict(css=""".stage{background:linear-gradient(160deg,#0D2E57 0%,#041730 55%,#0A1F3F 100%)}
+.panel{background:linear-gradient(180deg,#0B2546 0%,#041730 60%,#0A1F3F 100%)}.acc{color:#33AFD5}""",
+              fade="11,37,70", logo_foot="logo_white.png", lang="ar"),
+ "cream": dict(css="""html,body{background:#F7F2E8}body{color:#041730;direction:ltr;font-family:P,V,sans-serif}
+.stage{background:#F7F2E8}.panel{background:linear-gradient(180deg,#F7F2E8 0%,#F3ECDF 100%)}
+.h1{text-shadow:none}.sub{color:#4F5B66}.acc{color:#1E8FB8}.lime{color:#3F8C3A}
+.kick{background:rgba(4,23,48,.06);border-color:rgba(4,23,48,.25);color:#041730}.kick.solid{background:#041730;color:#F7F2E8}
+.foot{color:#5F6B6D}.card{box-shadow:0 14px 40px rgba(4,23,48,.12);border:2px solid #E6DCCB}
+.strike{color:#8A96A3}.onphoto{color:#fff}.onphoto .sub{color:#E8EEF5}.onphoto .acc{color:#7FD8FF}""",
+               fade="247,242,232", logo_foot="logo.png", lang="en"),
+}
+TH = dict(THEMES["blue"])
+META = {"foot": "لە کوردییەوە بۆ عەرەبیی عێراقی", "cta": "داوای بکە لە واتسئاپ", "badge": "گرنتی 7 وانە", "unit": "دینار", "phone": WA_FMT}
+
+
 def page(w, h, body):
-    return (f'<!doctype html><html lang="ckb"><head><meta charset="utf-8"><style>:root{{--w:{w}px;--h:{h}px}}{CSS}</style></head>'
+    return (f'<!doctype html><html lang="{TH["lang"]}"><head><meta charset="utf-8"><style>:root{{--w:{w}px;--h:{h}px}}{CSS}{TH["css"]}</style></head>'
             f'<body><div class="stage">{body}</div></body></html>')
 
 
@@ -79,7 +96,7 @@ def photo(scene, h, top=0, pos="center"):
 def band(ph, fh=260):
     """photo bottom fade into a solid panel colour, plus a soft top fade so the logo reads."""
     return (f'<div class="panel" style="top:{ph - 2}px;bottom:0"></div>'
-            + fade(ph - fh, fh + 2, "to bottom", "rgba(14,60,136,0)", "rgba(14,60,136,1)") + '<div class="topfade"></div>')
+            + fade(ph - fh, fh + 2, "to bottom", f"rgba({TH['fade']},0)", f"rgba({TH['fade']},1)") + '<div class="topfade"></div>')
 
 
 def fade(top, h, d="to bottom", a="rgba(11,42,107,0)", b="rgba(11,42,107,1)"):
@@ -88,12 +105,12 @@ def fade(top, h, d="to bottom", a="rgba(11,42,107,0)", b="rgba(11,42,107,1)"):
 
 def cta(size=38):
     return (f'<div class="cta" style="font-size:{size}px"><span class="ic">{PHONE_SVG}</span>'
-            f'<span>داوای بکە لە واتسئاپ <span class="lat" style="font-weight:800">{WA_FMT}</span></span></div>')
+            f'<span>{META["cta"]} <span class="lat" style="font-weight:800">{META["phone"]}</span></span></div>')
 
 
-def foot(y, txt="لە کوردییەوە بۆ عەرەبیی عێراقی"):
-    return (f'<div class="foot" style="top:{y}px"><span>{txt}</span>'
-            f'<img src="{B}/logo_white.png" style="height:44px"></div>')
+def foot(y, txt=None):
+    return (f'<div class="foot" style="top:{y}px"><span>{txt or META["foot"]}</span>'
+            f'<img src="{B}/{TH["logo_foot"]}" style="height:44px"></div>')
 
 
 def esc(s):
@@ -162,8 +179,8 @@ def post_full(p, w=1080, h=1350):
         b += fade(0, h * .55, "to top", "rgba(8,30,80,0)", "rgba(8,30,80,.92)")
         y = p.get("y", 130)
     b += logo(56, 44)
-    b += (f'<div style="position:absolute;right:64px;left:64px;top:{y}px">'
-          + (f'<div class="kick">{p["kick"]}</div>' if p.get("kick") else "")
+    b += (f'<div class="onphoto" style="position:absolute;right:64px;left:64px;top:{y}px;color:#fff">'
+          + (f'<div class="kick" style="color:#fff;border-color:rgba(255,255,255,.4);background:rgba(255,255,255,.14)">{p["kick"]}</div>' if p.get("kick") else "")
           + f'<div class="h1" style="font-size:{p.get("hs", 66)}px;margin-top:18px">{p["h1"]}</div>'
           + (f'<div class="sub" style="font-size:{p.get("ss", 34)}px;margin-top:16px">{p["sub"]}</div>' if p.get("sub") else "")
           + "</div>")
@@ -197,17 +214,20 @@ def ad(p, w=1080, h=1350):
     b = photo(p["scene"], ph, 0, p.get("pos", "center")) + band(ph, 300)
     b += logo(56, 150 if vertical else 44)
     top = ph - (110 if vertical else 90)
-    price = p["price"]
+    price = p.get("price")
     old = p.get("old")
-    pr = f'<div class="price"><span class="lat" style="font-size:52px">{price}</span><span style="font-size:30px">دینار</span></div>'
+    pr = "" if not price else f'<div class="price"><span class="lat" style="font-size:52px">{price}</span><span style="font-size:30px">{META["unit"]}</span></div>'
     if old:
-        pr += f'<span class="strike lat" style="font-size:34px;margin-right:18px">{old}</span>'
+        pr += f'<span class="strike lat" style="font-size:34px;margin-right:18px;margin-left:18px">{old}</span>'
+    badge = p.get("badge", META["badge"])
+    badge_html = f'<div class="badge">{SHIELD}<span>{badge}</span></div>' if badge else ""
+    subcol = "#4F5B66" if TH.get("lang") == "en" else "#E3EEFB"
     col = (f'<div style="position:absolute;right:60px;left:60px;top:{top}px;display:flex;flex-direction:column;align-items:flex-start;gap:{22 if vertical else 16}px">'
            + (f'<div class="kick solid" style="font-size:28px">{p["kick"]}</div>' if p.get("kick") else "")
            + f'<div class="h1" style="font-size:{p.get("hs", 64)}px">{p["h1"]}</div>'
-           + f'<div style="font-size:{p.get("ss", 33)}px;font-weight:700;line-height:1.5;color:#E3EEFB">{p["sub"]}</div>'
-           + f'<div style="align-self:stretch;display:flex;align-items:center;justify-content:space-between;margin-top:6px">'
-           + f'<div style="display:flex;align-items:center">{pr}</div><div class="badge">{SHIELD}<span>گرنتی 7 وانە</span></div></div>'
+           + f'<div style="font-size:{p.get("ss", 33)}px;font-weight:700;line-height:1.5;color:{subcol}">{p["sub"]}</div>'
+           + (f'<div style="align-self:stretch;display:flex;align-items:center;justify-content:space-between;margin-top:6px">'
+              f'<div style="display:flex;align-items:center">{pr}</div>{badge_html}</div>' if (pr or badge_html) else "")
            + (f'<div class="lime" style="font-weight:800;font-size:28px">{p["deadline"]}</div>' if p.get("deadline") else "")
            + '</div>')
     b += col
@@ -234,7 +254,11 @@ def render(pid, spec, size, outdir):
 
 
 if __name__ == "__main__":
-    specs = json.load(open(f"{ROOT}/spec.json"))
+    specfile = os.environ.get("SPEC", f"{ROOT}/spec.json")
+    specs = json.load(open(specfile))
+    meta = specs.pop("_meta", {})
+    TH.clear(); TH.update(THEMES[meta.get("theme", "blue")])
+    META.update({k: v for k, v in meta.items() if k != "theme"})
     want = sys.argv[1:] or ["all"]
     os.makedirs(f"{ROOT}/out", exist_ok=True)
     for pid, s in specs.items():
