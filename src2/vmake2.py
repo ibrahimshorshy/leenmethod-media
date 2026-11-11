@@ -134,10 +134,10 @@ body{{font-family:D,sans-serif;color:#fff}}
 .elogo{{width:640px}}
 .etitle{{font-weight:700;font-size:70px;line-height:1.35;color:#fff}}
 .book{{height:640px;filter:drop-shadow(0 30px 50px rgba(0,0,0,.5))}}
-.pcard{{width:100%;background:rgba(255,255,255,.07);border:1.5px solid rgba(255,255,255,.18);border-radius:44px;padding:44px 30px 50px;box-shadow:0 24px 60px rgba(0,8,24,.45)}}
-.pk{{font-weight:700;font-size:100px;line-height:1.3;color:#fff;direction:rtl}}
-.pl{{font-weight:500;font-size:52px;color:#6FD6F1;margin-top:6px;direction:ltr}}
-.pm{{font-weight:500;font-size:50px;color:#BFE07A;margin-top:14px}}
+.pcard{{width:100%;background:rgba(255,255,255,.07);border:1.5px solid rgba(255,255,255,.18);border-radius:44px;padding:64px 30px 70px;box-shadow:0 24px 60px rgba(0,8,24,.45)}}
+.pk{{font-weight:700;font-size:132px;line-height:1.3;color:#fff;direction:rtl}}
+.pl{{font-weight:500;font-size:64px;color:#6FD6F1;margin-top:8px;direction:ltr}}
+.pm{{font-weight:500;font-size:58px;color:#BFE07A;margin-top:18px}}
 .cta{{display:flex;align-items:center;gap:22px;background:linear-gradient(135deg,#B2DD63,#8BB942 55%,#6FA43A);color:#041730;border-radius:99px;padding:20px 52px 26px;font-weight:700;font-size:48px;box-shadow:0 14px 40px rgba(139,185,66,.35)}}
 .lat2{{direction:ltr}}
 """
