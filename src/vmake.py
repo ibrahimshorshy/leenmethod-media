@@ -93,8 +93,17 @@ def build(vid, v):
     if not times:
         segs = speech_segments(src)
         print(vid, "whisper:", [(round(a, 1), round(b, 1), t) for a, b, t in segs])
+        segs = [[a, b] for a, b, _ in segs]
+        while len(segs) > len(lines):            # merge the two closest neighbours
+            gaps = [segs[i + 1][0] - segs[i][1] for i in range(len(segs) - 1)]
+            i = gaps.index(min(gaps))
+            segs[i] = [segs[i][0], segs[i + 1][1]]; del segs[i + 1]
+        while segs and len(segs) < len(lines):   # split the longest segment
+            i = max(range(len(segs)), key=lambda k: segs[k][1] - segs[k][0])
+            a, b = segs[i]; m = (a + b) / 2
+            segs[i:i + 1] = [[a, m], [m, b]]
         if len(segs) == len(lines):
-            times = [[max(0, a - .1), min(dur, b + .25)] for a, b, _ in segs]
+            times = [[max(0, a - .1), min(dur, b + .25)] for a, b in segs]
         elif segs:
             a0, b0 = segs[0][0], segs[-1][1]
             step = (b0 - a0) / len(lines)
